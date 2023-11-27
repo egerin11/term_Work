@@ -1,0 +1,5 @@
+/home/egerin/Projects/term_qt/cmake-build-debug/CMakeFiles/term_qt.dir
+/home/egerin/Projects/term_qt/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/egerin/Projects/term_qt/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/egerin/Projects/term_qt/cmake-build-debug/CMakeFiles/term_qt_autogen_timestamp_deps.dir
+/home/egerin/Projects/term_qt/cmake-build-debug/CMakeFiles/term_qt_autogen.dir
