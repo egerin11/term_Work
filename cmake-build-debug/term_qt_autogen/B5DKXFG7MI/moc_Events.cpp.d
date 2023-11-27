@@ -1,19 +1,5 @@
-term_qt_autogen/timestamp: \
-  /home/egerin/Projects/term_qt/CMakeLists.txt \
-  CMakeFiles/3.27.7/CMakeCCompiler.cmake \
-  CMakeFiles/3.27.7/CMakeCXXCompiler.cmake \
-  CMakeFiles/3.27.7/CMakeSystem.cmake \
-  term_qt_autogen/moc_predefs.h \
-  /home/egerin/Projects/term_qt/src/main.cpp \
-  /home/egerin/Projects/term_qt/src/ui/mainwindow/mainwindow.cpp \
-  /home/egerin/Projects/term_qt/src/ui/mainwindow/mainwindow.h \
-  /home/egerin/Projects/term_qt/src/ui/mainwindow/mainwindow.ui \
-  /home/egerin/Projects/term_qt/src/ui/secondscreen/Events.h \
-  /home/egerin/Projects/term_qt/src/ui/secondscreen/custom_graphic/Events.cpp \
-  /home/egerin/Projects/term_qt/src/ui/secondscreen/secondscreen.cpp \
-  /home/egerin/Projects/term_qt/src/ui/secondscreen/secondscreen.h \
-  /home/egerin/Projects/term_qt/src/ui/secondscreen/secondscreen.ui \
-  /usr/bin/cmake \
+/home/egerin/Projects/term_qt/cmake-build-debug/term_qt_autogen/B5DKXFG7MI/moc_Events.cpp: /home/egerin/Projects/term_qt/src/ui/secondscreen/Events.h \
+  /home/egerin/Projects/term_qt/cmake-build-debug/term_qt_autogen/moc_predefs.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
   /usr/include/asm/errno.h \
@@ -355,9 +341,6 @@ term_qt_autogen/timestamp: \
   /usr/include/qt/QtWidgets/QGraphicsItem \
   /usr/include/qt/QtWidgets/QGraphicsView \
   /usr/include/qt/QtWidgets/QListWidget \
-  /usr/include/qt/QtWidgets/QMainWindow \
-  /usr/include/qt/QtWidgets/QStackedWidget \
-  /usr/include/qt/QtWidgets/QWidget \
   /usr/include/qt/QtWidgets/qabstractitemdelegate.h \
   /usr/include/qt/QtWidgets/qabstractitemview.h \
   /usr/include/qt/QtWidgets/qabstractscrollarea.h \
@@ -369,12 +352,10 @@ term_qt_autogen/timestamp: \
   /usr/include/qt/QtWidgets/qgraphicsview.h \
   /usr/include/qt/QtWidgets/qlistview.h \
   /usr/include/qt/QtWidgets/qlistwidget.h \
-  /usr/include/qt/QtWidgets/qmainwindow.h \
   /usr/include/qt/QtWidgets/qrubberband.h \
   /usr/include/qt/QtWidgets/qscrollarea.h \
   /usr/include/qt/QtWidgets/qsizepolicy.h \
   /usr/include/qt/QtWidgets/qslider.h \
-  /usr/include/qt/QtWidgets/qstackedwidget.h \
   /usr/include/qt/QtWidgets/qstyle.h \
   /usr/include/qt/QtWidgets/qstyleoption.h \
   /usr/include/qt/QtWidgets/qtabbar.h \
@@ -394,76 +375,8 @@ term_qt_autogen/timestamp: \
   /usr/include/unistd.h \
   /usr/include/wchar.h \
   /usr/include/wctype.h \
-  /usr/lib/cmake/Qt5/Qt5Config.cmake \
-  /usr/lib/cmake/Qt5/Qt5ConfigVersion.cmake \
-  /usr/lib/cmake/Qt5/Qt5ModuleLocation.cmake \
-  /usr/lib/cmake/Qt5Core/Qt5CoreConfig.cmake \
-  /usr/lib/cmake/Qt5Core/Qt5CoreConfigExtras.cmake \
-  /usr/lib/cmake/Qt5Core/Qt5CoreConfigExtrasMkspecDir.cmake \
-  /usr/lib/cmake/Qt5Core/Qt5CoreConfigVersion.cmake \
-  /usr/lib/cmake/Qt5Core/Qt5CoreMacros.cmake \
-  /usr/lib/cmake/Qt5Gui/Qt5GuiConfig.cmake \
-  /usr/lib/cmake/Qt5Gui/Qt5GuiConfigExtras.cmake \
-  /usr/lib/cmake/Qt5Gui/Qt5GuiConfigVersion.cmake \
-  /usr/lib/cmake/Qt5Gui/Qt5Gui_QComposePlatformInputContextPlugin.cmake \
-  /usr/lib/cmake/Qt5Gui/Qt5Gui_QEglFSEmulatorIntegrationPlugin.cmake \
-  /usr/lib/cmake/Qt5Gui/Qt5Gui_QEglFSIntegrationPlugin.cmake \
-  /usr/lib/cmake/Qt5Gui/Qt5Gui_QEglFSKmsEglDeviceIntegrationPlugin.cmake \
-  /usr/lib/cmake/Qt5Gui/Qt5Gui_QEglFSKmsGbmIntegrationPlugin.cmake \
-  /usr/lib/cmake/Qt5Gui/Qt5Gui_QEglFSX11IntegrationPlugin.cmake \
-  /usr/lib/cmake/Qt5Gui/Qt5Gui_QEvdevKeyboardPlugin.cmake \
-  /usr/lib/cmake/Qt5Gui/Qt5Gui_QEvdevMousePlugin.cmake \
-  /usr/lib/cmake/Qt5Gui/Qt5Gui_QEvdevTabletPlugin.cmake \
-  /usr/lib/cmake/Qt5Gui/Qt5Gui_QEvdevTouchScreenPlugin.cmake \
-  /usr/lib/cmake/Qt5Gui/Qt5Gui_QGifPlugin.cmake \
-  /usr/lib/cmake/Qt5Gui/Qt5Gui_QGtk3ThemePlugin.cmake \
-  /usr/lib/cmake/Qt5Gui/Qt5Gui_QICOPlugin.cmake \
-  /usr/lib/cmake/Qt5Gui/Qt5Gui_QIbusPlatformInputContextPlugin.cmake \
-  /usr/lib/cmake/Qt5Gui/Qt5Gui_QJpegPlugin.cmake \
-  /usr/lib/cmake/Qt5Gui/Qt5Gui_QLibInputPlugin.cmake \
-  /usr/lib/cmake/Qt5Gui/Qt5Gui_QLinuxFbIntegrationPlugin.cmake \
-  /usr/lib/cmake/Qt5Gui/Qt5Gui_QMinimalEglIntegrationPlugin.cmake \
-  /usr/lib/cmake/Qt5Gui/Qt5Gui_QMinimalIntegrationPlugin.cmake \
-  /usr/lib/cmake/Qt5Gui/Qt5Gui_QOffscreenIntegrationPlugin.cmake \
-  /usr/lib/cmake/Qt5Gui/Qt5Gui_QSvgIconPlugin.cmake \
-  /usr/lib/cmake/Qt5Gui/Qt5Gui_QSvgPlugin.cmake \
-  /usr/lib/cmake/Qt5Gui/Qt5Gui_QTsLibPlugin.cmake \
-  /usr/lib/cmake/Qt5Gui/Qt5Gui_QTuioTouchPlugin.cmake \
-  /usr/lib/cmake/Qt5Gui/Qt5Gui_QVirtualKeyboardPlugin.cmake \
-  /usr/lib/cmake/Qt5Gui/Qt5Gui_QVncIntegrationPlugin.cmake \
-  /usr/lib/cmake/Qt5Gui/Qt5Gui_QWaylandEglPlatformIntegrationPlugin.cmake \
-  /usr/lib/cmake/Qt5Gui/Qt5Gui_QWaylandIntegrationPlugin.cmake \
-  /usr/lib/cmake/Qt5Gui/Qt5Gui_QWaylandXCompositeEglPlatformIntegrationPlugin.cmake \
-  /usr/lib/cmake/Qt5Gui/Qt5Gui_QWaylandXCompositeGlxPlatformIntegrationPlugin.cmake \
-  /usr/lib/cmake/Qt5Gui/Qt5Gui_QXcbEglIntegrationPlugin.cmake \
-  /usr/lib/cmake/Qt5Gui/Qt5Gui_QXcbGlxIntegrationPlugin.cmake \
-  /usr/lib/cmake/Qt5Gui/Qt5Gui_QXcbIntegrationPlugin.cmake \
-  /usr/lib/cmake/Qt5Gui/Qt5Gui_QXdgDesktopPortalThemePlugin.cmake \
-  /usr/lib/cmake/Qt5Widgets/Qt5WidgetsConfig.cmake \
-  /usr/lib/cmake/Qt5Widgets/Qt5WidgetsConfigExtras.cmake \
-  /usr/lib/cmake/Qt5Widgets/Qt5WidgetsConfigVersion.cmake \
-  /usr/lib/cmake/Qt5Widgets/Qt5WidgetsMacros.cmake \
   /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/limits.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/stdarg.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/stddef.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/stdint.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/syslimits.h \
-  /usr/share/cmake/Modules/CMakeCInformation.cmake \
-  /usr/share/cmake/Modules/CMakeCXXInformation.cmake \
-  /usr/share/cmake/Modules/CMakeCommonLanguageInclude.cmake \
-  /usr/share/cmake/Modules/CMakeGenericSystem.cmake \
-  /usr/share/cmake/Modules/CMakeInitializeConfigs.cmake \
-  /usr/share/cmake/Modules/CMakeLanguageInformation.cmake \
-  /usr/share/cmake/Modules/CMakeParseArguments.cmake \
-  /usr/share/cmake/Modules/CMakeSystemSpecificInformation.cmake \
-  /usr/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake \
-  /usr/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake \
-  /usr/share/cmake/Modules/Compiler/GNU-C.cmake \
-  /usr/share/cmake/Modules/Compiler/GNU-CXX.cmake \
-  /usr/share/cmake/Modules/Compiler/GNU.cmake \
-  /usr/share/cmake/Modules/Platform/Linux-GNU-C.cmake \
-  /usr/share/cmake/Modules/Platform/Linux-GNU-CXX.cmake \
-  /usr/share/cmake/Modules/Platform/Linux-GNU.cmake \
-  /usr/share/cmake/Modules/Platform/Linux-Initialize.cmake \
-  /usr/share/cmake/Modules/Platform/Linux.cmake \
-  /usr/share/cmake/Modules/Platform/UnixPaths.cmake
+  /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/syslimits.h
