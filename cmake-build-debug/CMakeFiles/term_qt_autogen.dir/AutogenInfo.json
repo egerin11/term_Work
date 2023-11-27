@@ -106,6 +106,48 @@
 			"MU",
 			"B5DKXFG7MI/moc_secondscreen.cpp",
 			null
+		],
+		[
+			"/home/egerin/Projects/term_qt/src_back/data/header/bmp_header.h",
+			"MU",
+			"HIWW3WNWPI/moc_bmp_header.cpp",
+			null
+		],
+		[
+			"/home/egerin/Projects/term_qt/src_back/data/header/bmp_image.h",
+			"MU",
+			"HIWW3WNWPI/moc_bmp_image.cpp",
+			null
+		],
+		[
+			"/home/egerin/Projects/term_qt/src_back/data/header/image.h",
+			"MU",
+			"HIWW3WNWPI/moc_image.cpp",
+			null
+		],
+		[
+			"/home/egerin/Projects/term_qt/src_back/data/header/pixel.h",
+			"MU",
+			"HIWW3WNWPI/moc_pixel.cpp",
+			null
+		],
+		[
+			"/home/egerin/Projects/term_qt/src_back/data/header/ppm_image.h",
+			"MU",
+			"HIWW3WNWPI/moc_ppm_image.cpp",
+			null
+		],
+		[
+			"/home/egerin/Projects/term_qt/src_back/data_model/convert.h",
+			"MU",
+			"FRGYWVCAWX/moc_convert.cpp",
+			null
+		],
+		[
+			"/home/egerin/Projects/term_qt/src_back/data_model/get_bmp_data/BMPImageProcess.h",
+			"MU",
+			"3NE6KO2X7W/moc_BMPImageProcess.cpp",
+			null
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
@@ -171,6 +213,27 @@
 		],
 		[
 			"/home/egerin/Projects/term_qt/src/ui/secondscreen/secondscreen.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/egerin/Projects/term_qt/src_back/data/bmp_image.cpp",
+			"MU",
+			null
+		],
+		[ "/home/egerin/Projects/term_qt/src_back/data/image.cpp", "MU", null ],
+		[
+			"/home/egerin/Projects/term_qt/src_back/data/ppm_image.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/egerin/Projects/term_qt/src_back/data_model/convert.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/egerin/Projects/term_qt/src_back/data_model/get_bmp_data/BMPImageProcess.cpp",
 			"MU",
 			null
 		]

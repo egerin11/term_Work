@@ -22,6 +22,18 @@ add_executable(term_qt src/main.cpp
         src/ui/secondscreen/secondscreen.ui
         src/ui/secondscreen/custom_graphic/Events.cpp
         src/ui/secondscreen/Events.h
+        src_back/data_model/convert.cpp
+        src_back/data_model/convert.h
+        src_back/data_model/get_bmp_data/BMPImageProcess.cpp
+        src_back/data_model/get_bmp_data/BMPImageProcess.h
+        src_back/data/bmp_image.cpp
+        src_back/data/image.cpp
+        src_back/data/header/ppm_image.h
+        src_back/data/header/bmp_image.h
+        src_back/data/header/bmp_header.h
+        src_back/data/header/pixel.h
+        src_back/data/header/image.h
+        src_back/data/ppm_image.cpp
 
 )
 target_link_libraries(term_qt

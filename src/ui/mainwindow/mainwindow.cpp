@@ -1,6 +1,9 @@
 
+
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
+#include <QDebug>
+
 
 
 MainWindow::MainWindow(QWidget *parent)
@@ -26,14 +29,12 @@ MainWindow::~MainWindow() {
 }
 
 
-
-
-void MainWindow::on_pushButton_clicked()
-{
+void MainWindow::on_pushButton_clicked() {
     if (!secondScreen) {
         secondScreen = new SecondScreen(this);
         stackedWidget->addWidget(secondScreen);
     }
     stackedWidget->setCurrentWidget(secondScreen);
-}
+
+    }
 
