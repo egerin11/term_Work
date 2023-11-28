@@ -11,27 +11,24 @@
 #include<QDragLeaveEvent>
 #include<QDragMoveEvent>
 #include<QDropEvent>
-#include<QMimeData>
-#include<QString>
-#include<QGraphicsItem>
-class events
+class Events
 {
 public:
-    events();
+    Events();
 };
-
-
-class Custom_View:public QGraphicsView{
+class CustomGraphicsView:public QGraphicsView{
 Q_OBJECT
+signals:
+    void itemDrop(QListWidgetItem*);
 public:
-    explicit Custom_View(QWidget *parent=nullptr);
+    explicit CustomGraphicsView (QWidget *widget=nullptr);
 protected:
     void dropEvent(QDropEvent *event) override;
     void dragEnterEvent(QDragEnterEvent* event) override ;
     void dragLeaveEvent(QDragLeaveEvent *event) override;
     void dragMoveEvent(QDragMoveEvent * event) override;
-protected:
-    QGraphicsScene *scene;
+    using QGraphicsView::QGraphicsView;
+
 };
 
 #endif //TERM_QT_EVENTS_H

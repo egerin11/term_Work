@@ -7,12 +7,12 @@ term_qt_autogen/timestamp: \
 	/home/egerin/Projects/term_qt/src/main.cpp \
 	/home/egerin/Projects/term_qt/src/ui/mainwindow/mainwindow.cpp \
 	/home/egerin/Projects/term_qt/src/ui/mainwindow/mainwindow.h \
+	/home/egerin/Projects/term_qt/src/ui/secondscreen/Events.cpp \
 	/home/egerin/Projects/term_qt/src/ui/secondscreen/Events.h \
 	/home/egerin/Projects/term_qt/src/ui/secondscreen/LRUCache.cpp \
 	/home/egerin/Projects/term_qt/src/ui/secondscreen/LRUCache.h \
 	/home/egerin/Projects/term_qt/src/ui/secondscreen/convert.cpp \
 	/home/egerin/Projects/term_qt/src/ui/secondscreen/convert.h \
-	/home/egerin/Projects/term_qt/src/ui/secondscreen/custom_graphic/Events.cpp \
 	/home/egerin/Projects/term_qt/src/ui/secondscreen/secondscreen.cpp \
 	/home/egerin/Projects/term_qt/src/ui/secondscreen/secondscreen.h \
 	/home/egerin/Projects/term_qt/src/ui/secondscreen/src_back/data/bmp_image.cpp \
@@ -262,9 +262,7 @@ term_qt_autogen/timestamp: \
 	/usr/include/qt/QtCore/QDebug \
 	/usr/include/qt/QtCore/QDir \
 	/usr/include/qt/QtCore/QMap \
-	/usr/include/qt/QtCore/QMimeData \
 	/usr/include/qt/QtCore/QSet \
-	/usr/include/qt/QtCore/QString \
 	/usr/include/qt/QtCore/qabstractitemmodel.h \
 	/usr/include/qt/QtCore/qalgorithms.h \
 	/usr/include/qt/QtCore/qarraydata.h \
@@ -302,7 +300,6 @@ term_qt_autogen/timestamp: \
 	/usr/include/qt/QtCore/qmap.h \
 	/usr/include/qt/QtCore/qmargins.h \
 	/usr/include/qt/QtCore/qmetatype.h \
-	/usr/include/qt/QtCore/qmimedata.h \
 	/usr/include/qt/QtCore/qnamespace.h \
 	/usr/include/qt/QtCore/qnumeric.h \
 	/usr/include/qt/QtCore/qobject.h \
@@ -373,7 +370,6 @@ term_qt_autogen/timestamp: \
 	/usr/include/qt/QtGui/qvector2d.h \
 	/usr/include/qt/QtGui/qwindowdefs.h \
 	/usr/include/qt/QtWidgets/QFileDialog \
-	/usr/include/qt/QtWidgets/QGraphicsItem \
 	/usr/include/qt/QtWidgets/QGraphicsPixmapItem \
 	/usr/include/qt/QtWidgets/QGraphicsScene \
 	/usr/include/qt/QtWidgets/QGraphicsView \

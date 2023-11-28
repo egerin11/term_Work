@@ -11,50 +11,42 @@
 
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
-#include <QtWidgets/QGraphicsView>
 #include <QtWidgets/QGridLayout>
 #include <QtWidgets/QListWidget>
 #include <QtWidgets/QPushButton>
-#include <QtWidgets/QSpacerItem>
 #include <QtWidgets/QWidget>
-
+//#include "../../../Events.h"
+#include<QGraphicsView>
 QT_BEGIN_NAMESPACE
 
 class Ui_SecondScreen
 {
 public:
     QGridLayout *gridLayout;
-    QSpacerItem *horizontalSpacer;
-    QSpacerItem *horizontalSpacer_2;
-    QGraphicsView *graphicsView;
     QListWidget *listWidget;
+    QGraphicsView *graphicsView;
     QPushButton *pushButton;
 
     void setupUi(QWidget *SecondScreen)
     {
         if (SecondScreen->objectName().isEmpty())
             SecondScreen->setObjectName(QString::fromUtf8("SecondScreen"));
-        SecondScreen->resize(1278, 793);
+        SecondScreen->resize(1224, 658);
         gridLayout = new QGridLayout(SecondScreen);
         gridLayout->setObjectName(QString::fromUtf8("gridLayout"));
-        horizontalSpacer = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+        listWidget = new QListWidget(SecondScreen);
+        listWidget->setObjectName(QString::fromUtf8("listWidget"));
+        listWidget->setDragEnabled(true);
+        listWidget->setDragDropMode(QAbstractItemView::DragDrop);
+        listWidget->setDefaultDropAction(Qt::MoveAction);
 
-        gridLayout->addItem(horizontalSpacer, 1, 4, 1, 1);
-
-        horizontalSpacer_2 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
-
-        gridLayout->addItem(horizontalSpacer_2, 1, 0, 1, 1);
+        gridLayout->addWidget(listWidget, 1, 0, 1, 1);
 
         graphicsView = new QGraphicsView(SecondScreen);
         graphicsView->setObjectName(QString::fromUtf8("graphicsView"));
         graphicsView->setMinimumSize(QSize(600, 600));
 
-        gridLayout->addWidget(graphicsView, 1, 2, 1, 1);
-
-        listWidget = new QListWidget(SecondScreen);
-        listWidget->setObjectName(QString::fromUtf8("listWidget"));
-
-        gridLayout->addWidget(listWidget, 1, 1, 1, 1);
+        gridLayout->addWidget(graphicsView, 1, 1, 1, 1);
 
         pushButton = new QPushButton(SecondScreen);
         pushButton->setObjectName(QString::fromUtf8("pushButton"));
@@ -65,7 +57,7 @@ public:
 "border-radius: 10px;\n"
 "border: 1px solid #8A3E24;"));
 
-        gridLayout->addWidget(pushButton, 0, 2, 1, 1);
+        gridLayout->addWidget(pushButton, 0, 0, 1, 1);
 
 
         retranslateUi(SecondScreen);

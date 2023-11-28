@@ -5,7 +5,6 @@
 #include "src_back/data/header/bmp_image.h"
 
 
-#include <QDebug>
 #include <QFileDialog>
 #include <QDesktopServices>
 
@@ -19,19 +18,7 @@ SecondScreen::SecondScreen(QWidget *parent) :
     QPalette palette = this->palette();
     palette.setBrush(QPalette::Window, brush);
     this->setPalette(palette);
-//    stackedWidget = new QStackedWidget(this);
-//
-//    stackedWidget->addWidget(ui->pushButton);
-////
-////    setCentralWidget(stackedWidget);
-//    QVBoxLayout *layout = new QVBoxLayout(this);
-//    layout->addWidget(stackedWidget);
-//
-//    // Если у вас есть дополнительные элементы интерфейса, добавьте их в макет
-//    // Например:
-//     layout->addWidget(ui->pushButton);
-//
-//    setLayout(layout);
+    connect(ui->listWidget, &QListWidget::itemClicked, this, &SecondScreen::on_list_item_clicked);
 }
 
 
@@ -39,22 +26,35 @@ SecondScreen::~SecondScreen() {
     delete ui;
 }
 
+void SecondScreen::load_image(const QString &filePath) {
+    QPixmap pixmap(filePath);
+
+    if (!pixmap.isNull()) {
+        QGraphicsScene *scene = new QGraphicsScene;
+        scene->clear();
+        QGraphicsPixmapItem *graphicsItem = new QGraphicsPixmapItem(pixmap);
+
+        ui->graphicsView->setScene(scene);
+        scene->addItem(graphicsItem);
+
+        ui->graphicsView->fitInView(graphicsItem->boundingRect(), Qt::KeepAspectRatio);
+
+        qDebug() << "Opened file: " << filePath;
+    }
+}
+
 void SecondScreen::on_pushButton_clicked() {
     QString filePath = QFileDialog::getOpenFileName(this, "Выберите файл", QDir::homePath(), "Все файлы (*.*)");
     if (!filePath.isEmpty()) {
-        // Создаем QPixmap из выбранного изображения
-        QPixmap pixmap(filePath);
-        int view_width = 100;
-//                ui->graphicsView->width();
-        int view_height = 100;
-//                ui->graphicsView->height();
-        QPixmap scaled_pixmap = pixmap.scaled(view_width,view_height, Qt::KeepAspectRatio);
+        int view_width = 50;
+        int view_height = 50;
+
+        QPixmap scaled_pixmap = QPixmap(filePath).scaled(view_width, view_height);
         QImage scaled_image = scaled_pixmap.toImage();
+
         std::vector<std::vector<Pixel>> pixels(view_height, std::vector<Pixel>(view_width));
-        for (int y = 0; y < view_height; ++y)
-        {
-            for (int x = 0; x < view_width; ++x)
-            {
+        for (int y = 0; y < view_height; ++y) {
+            for (int x = 0; x < view_width; ++x) {
                 QRgb pixelColor = scaled_image.pixel(x, y);
 
                 Pixel pixel;
@@ -65,55 +65,113 @@ void SecondScreen::on_pushButton_clicked() {
                 pixels[y][x] = pixel;
             }
         }
-        if (!pixmap.isNull()) {
-            LRUCache* lrucache = new LRUCache(ui->listWidget, 2, this);
-            QListWidgetItem *item_list = new QListWidgetItem(filePath);
-            lrucache->addItem(item_list);
 
-            // Обновляем список, чтобы элементы оставались видимыми
-//            listWidget->scrollToBottom();
+        LRUCache *lrucache = new LRUCache(ui->listWidget, 2, this);
+        QListWidgetItem *item_list = new QListWidgetItem();
+        item_list->setIcon(QIcon(scaled_pixmap));
+        item_list->setText(QFileInfo(filePath).fileName());
+        item_list->setData(Qt::UserRole, filePath);
+        lrucache->addItem(item_list);
 
-            // Создаем новую сцену и элемент QGraphicsPixmapItem
-            QGraphicsScene *scene = new QGraphicsScene; // Instantiate a new QGraphicsScene
-            scene->clear();
-            QGraphicsPixmapItem *item = new QGraphicsPixmapItem(pixmap);
+        load_image(filePath);
 
+        BMPImage bmpImage;
+        bmpImage.set_width(view_width);
+        bmpImage.set_height(view_height);
+        bmpImage.set_pixels(pixels);
 
-            // Устанавливаем сцену в QGraphicsView
-            ui->graphicsView->setScene(scene);
+        Image *image = dynamic_cast<Image *>(new BMPImage(bmpImage));
 
-            // Добавляем элемент в сцену
-            scene->addItem(item);
+        Convert::grayscale(image);
+        Convert::ascii(image, "test.txt");
+        QString file_path = "/home/egerin/Projects/term_qt/cmake-build-debug/";
+        QUrl fileUrl = QUrl::fromLocalFile(file_path + "test.txt");
 
-            // Опционально, чтобы изображение подгонялось в QGraphicsView
-            ui->graphicsView->fitInView(item->boundingRect(), Qt::KeepAspectRatio);
-
-//            BMPImageProcess bmpImageProcess;
-//            bmpImageProcess.read_image(filePath.toStdString());
-//
-//            std::vector<std::vector<Pixel>> pixels = bmpImageProcess.get_pixels();
-//            int width = bmpImageProcess.get_width();
-//            int height = bmpImageProcess.get_height();
-//
-            BMPImage bmpImage;
-            bmpImage.set_width(view_width);
-            bmpImage.set_height(view_height);
-            bmpImage.set_pixels(pixels);
-
-            Image *image = dynamic_cast<Image *>(new BMPImage(bmpImage));
-
-//            std::vector<std::vector<Pixel>> pixel = Convert::resized_image(image, 50, 50);
-            Convert::grayscale(image);
-            Convert::ascii(image, "test.txt");
-            QString file_path = "/home/egerin/Projects/term_qt/cmake-build-debug/";
-            QUrl fileUrl = QUrl::fromLocalFile(file_path + "test.txt");
-
-            // Открываем файл с использованием ассоциированного приложения
-            QDesktopServices::openUrl(fileUrl);
-//        ui->textBrowser->setText("Открыт файл: " + filePath);
-            qDebug() << "File Name: " << QFileInfo(filePath).fileName();
-            qDebug() << "File Path: " << filePath;
-        }
+        QDesktopServices::openUrl(fileUrl);
     }
 }
+
+void SecondScreen::on_list_item_clicked(QListWidgetItem *item) {
+    QString filePath = item->data(Qt::UserRole).toString();
+    if (!filePath.isEmpty()) {
+        load_image(filePath);
+    }
+}
+
+//void SecondScreen::on_pushButton_clicked() {
+//    QString filePath = QFileDialog::getOpenFileName(this, "Выберите файл", QDir::homePath(), "Все файлы (*.*)");
+//    if (!filePath.isEmpty()) {
+//        QPixmap pixmap(filePath);
+//        int view_width = 50;
+//        int view_height = 50;
+//        QPixmap scaled_pixmap = pixmap.scaled(view_width, view_height);
+//        QImage scaled_image = scaled_pixmap.toImage();
+//        std::vector<std::vector<Pixel>> pixels(view_height, std::vector<Pixel>(view_width));
+//        for (int y = 0; y < view_height; ++y) {
+//            for (int x = 0; x < view_width; ++x) {
+//                QRgb pixelColor = scaled_image.pixel(x, y);
+//
+//                Pixel pixel;
+//                pixel.m_red = qRed(pixelColor);
+//                pixel.m_green = qGreen(pixelColor);
+//                pixel.m_blue = qBlue(pixelColor);
+//
+//                pixels[y][x] = pixel;
+//            }
+//        }
+//        if (!pixmap.isNull()) {
+//            LRUCache *lrucache = new LRUCache(ui->listWidget, 2, this);
+//            QListWidgetItem *item_list = new QListWidgetItem();
+//            item_list->setIcon(QIcon(pixmap));
+//            item_list->setText(QFileInfo(filePath).fileName());
+//            item_list->setData(Qt::UserRole, filePath);
+//            lrucache->addItem(item_list);
+//
+//            QGraphicsScene *scene = new QGraphicsScene;
+//            scene->clear();
+//            QGraphicsPixmapItem *item = new QGraphicsPixmapItem(pixmap);
+//
+//            ui->graphicsView->setScene(scene);
+//            scene->addItem(item);
+//            ui->graphicsView->fitInView(item->boundingRect(), Qt::KeepAspectRatio);
+//
+//            BMPImage bmpImage;
+//            bmpImage.set_width(view_width);
+//            bmpImage.set_height(view_height);
+//            bmpImage.set_pixels(pixels);
+//
+//            Image *image = dynamic_cast<Image *>(new BMPImage(bmpImage));
+//
+//            Convert::grayscale(image);
+//            Convert::ascii(image, "test.txt");
+//            QString file_path = "/home/egerin/Projects/term_qt/cmake-build-debug/";
+//            QUrl fileUrl = QUrl::fromLocalFile(file_path + "test.txt");
+//
+//            QDesktopServices::openUrl(fileUrl);
+//            qDebug() << "File Name: " << QFileInfo(filePath).fileName();
+//            qDebug() << "File Path: " << filePath;
+//        }
+//    }
+//}
+//
+//void SecondScreen::on_list_item_clicked(QListWidgetItem *item) {
+//    QString filePath = item->data(Qt::UserRole).toString();
+//
+//    if (!filePath.isEmpty()) {
+//        QPixmap pixmap(filePath);
+//
+//        if (!pixmap.isNull()) {
+//            QGraphicsScene *scene = new QGraphicsScene;
+//            scene->clear();
+//            QGraphicsPixmapItem *graphicsItem = new QGraphicsPixmapItem(pixmap);
+//
+//            ui->graphicsView->setScene(scene);
+//            scene->addItem(graphicsItem);
+//
+//            ui->graphicsView->fitInView(graphicsItem->boundingRect(), Qt::KeepAspectRatio);
+//
+//            qDebug() << "Opened file: " << filePath;
+//        }
+//    }
+//}
 

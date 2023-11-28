@@ -25,14 +25,18 @@ public:
     explicit SecondScreen(QWidget *parent = nullptr);
 
     ~SecondScreen() override;
+
 private slots:
 
+    void on_list_item_clicked(QListWidgetItem *item);
 
     void on_pushButton_clicked();
+
 private:
+    void load_image(const QString &filePath);
     Ui::SecondScreen *ui;
-    QGraphicsScene * scene;
-    LRUCache* lrucache_;
+    QGraphicsScene *scene;
+    LRUCache *lrucache_;
 };
 
 

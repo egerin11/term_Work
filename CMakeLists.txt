@@ -20,7 +20,7 @@ add_executable(term_qt src/main.cpp
         src/ui/secondscreen/secondscreen.cpp
         src/ui/secondscreen/secondscreen.h
         src/ui/secondscreen/secondscreen.ui
-        src/ui/secondscreen/custom_graphic/Events.cpp
+        src/ui/secondscreen/Events.cpp
         src/ui/secondscreen/Events.h
         src/ui/secondscreen/convert.cpp
         src/ui/secondscreen/convert.h

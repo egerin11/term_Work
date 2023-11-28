@@ -234,8 +234,6 @@
   /usr/include/linux/errno.h \
   /usr/include/locale.h \
   /usr/include/pthread.h \
-  /usr/include/qt/QtCore/QMimeData \
-  /usr/include/qt/QtCore/QString \
   /usr/include/qt/QtCore/qabstractitemmodel.h \
   /usr/include/qt/QtCore/qalgorithms.h \
   /usr/include/qt/QtCore/qarraydata.h \
@@ -269,7 +267,6 @@
   /usr/include/qt/QtCore/qmap.h \
   /usr/include/qt/QtCore/qmargins.h \
   /usr/include/qt/QtCore/qmetatype.h \
-  /usr/include/qt/QtCore/qmimedata.h \
   /usr/include/qt/QtCore/qnamespace.h \
   /usr/include/qt/QtCore/qnumeric.h \
   /usr/include/qt/QtCore/qobject.h \
@@ -321,7 +318,6 @@
   /usr/include/qt/QtGui/qmatrix.h \
   /usr/include/qt/QtGui/qpaintdevice.h \
   /usr/include/qt/QtGui/qpainter.h \
-  /usr/include/qt/QtGui/qpainterpath.h \
   /usr/include/qt/QtGui/qpalette.h \
   /usr/include/qt/QtGui/qpen.h \
   /usr/include/qt/QtGui/qpixelformat.h \
@@ -338,7 +334,6 @@
   /usr/include/qt/QtGui/qvalidator.h \
   /usr/include/qt/QtGui/qvector2d.h \
   /usr/include/qt/QtGui/qwindowdefs.h \
-  /usr/include/qt/QtWidgets/QGraphicsItem \
   /usr/include/qt/QtWidgets/QGraphicsView \
   /usr/include/qt/QtWidgets/QListWidget \
   /usr/include/qt/QtWidgets/qabstractitemdelegate.h \
@@ -347,7 +342,6 @@
   /usr/include/qt/QtWidgets/qabstractslider.h \
   /usr/include/qt/QtWidgets/qabstractspinbox.h \
   /usr/include/qt/QtWidgets/qframe.h \
-  /usr/include/qt/QtWidgets/qgraphicsitem.h \
   /usr/include/qt/QtWidgets/qgraphicsscene.h \
   /usr/include/qt/QtWidgets/qgraphicsview.h \
   /usr/include/qt/QtWidgets/qlistview.h \

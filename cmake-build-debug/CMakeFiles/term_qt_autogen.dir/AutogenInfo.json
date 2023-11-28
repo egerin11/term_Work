@@ -213,17 +213,17 @@
 			null
 		],
 		[
+			"/home/egerin/Projects/term_qt/src/ui/secondscreen/Events.cpp",
+			"MU",
+			null
+		],
+		[
 			"/home/egerin/Projects/term_qt/src/ui/secondscreen/LRUCache.cpp",
 			"MU",
 			null
 		],
 		[
 			"/home/egerin/Projects/term_qt/src/ui/secondscreen/convert.cpp",
-			"MU",
-			null
-		],
-		[
-			"/home/egerin/Projects/term_qt/src/ui/secondscreen/custom_graphic/Events.cpp",
 			"MU",
 			null
 		],
