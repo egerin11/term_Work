@@ -1,5 +1,6 @@
 /home/egerin/Projects/term_qt/cmake-build-debug/term_qt_autogen/U4N2I235NK/moc_mainwindow.cpp: /home/egerin/Projects/term_qt/src/ui/mainwindow/mainwindow.h \
   /home/egerin/Projects/term_qt/cmake-build-debug/term_qt_autogen/moc_predefs.h \
+  /home/egerin/Projects/term_qt/src/ui/secondscreen/LRUCache.h \
   /home/egerin/Projects/term_qt/src/ui/secondscreen/secondscreen.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
@@ -237,6 +238,9 @@
   /usr/include/pthread.h \
   /usr/include/qt/QtCore/QDebug \
   /usr/include/qt/QtCore/QDir \
+  /usr/include/qt/QtCore/QMap \
+  /usr/include/qt/QtCore/QSet \
+  /usr/include/qt/QtCore/qabstractitemmodel.h \
   /usr/include/qt/QtCore/qalgorithms.h \
   /usr/include/qt/QtCore/qarraydata.h \
   /usr/include/qt/QtCore/qatomic.h \
@@ -263,6 +267,7 @@
   /usr/include/qt/QtCore/qhash.h \
   /usr/include/qt/QtCore/qhashfunctions.h \
   /usr/include/qt/QtCore/qiodevice.h \
+  /usr/include/qt/QtCore/qitemselectionmodel.h \
   /usr/include/qt/QtCore/qiterator.h \
   /usr/include/qt/QtCore/qline.h \
   /usr/include/qt/QtCore/qlist.h \
@@ -283,6 +288,7 @@
   /usr/include/qt/QtCore/qrect.h \
   /usr/include/qt/QtCore/qrefcount.h \
   /usr/include/qt/QtCore/qregexp.h \
+  /usr/include/qt/QtCore/qregularexpression.h \
   /usr/include/qt/QtCore/qscopedpointer.h \
   /usr/include/qt/QtCore/qset.h \
   /usr/include/qt/QtCore/qshareddata.h \
@@ -328,21 +334,35 @@
   /usr/include/qt/QtGui/qtgui-config.h \
   /usr/include/qt/QtGui/qtguiglobal.h \
   /usr/include/qt/QtGui/qtransform.h \
+  /usr/include/qt/QtGui/qvalidator.h \
   /usr/include/qt/QtGui/qwindowdefs.h \
   /usr/include/qt/QtWidgets/QFileDialog \
   /usr/include/qt/QtWidgets/QGraphicsPixmapItem \
   /usr/include/qt/QtWidgets/QGraphicsScene \
+  /usr/include/qt/QtWidgets/QListWidget \
   /usr/include/qt/QtWidgets/QMainWindow \
   /usr/include/qt/QtWidgets/QStackedWidget \
   /usr/include/qt/QtWidgets/QWidget \
+  /usr/include/qt/QtWidgets/qabstractitemdelegate.h \
+  /usr/include/qt/QtWidgets/qabstractitemview.h \
+  /usr/include/qt/QtWidgets/qabstractscrollarea.h \
+  /usr/include/qt/QtWidgets/qabstractslider.h \
+  /usr/include/qt/QtWidgets/qabstractspinbox.h \
   /usr/include/qt/QtWidgets/qdialog.h \
   /usr/include/qt/QtWidgets/qfiledialog.h \
   /usr/include/qt/QtWidgets/qframe.h \
   /usr/include/qt/QtWidgets/qgraphicsitem.h \
   /usr/include/qt/QtWidgets/qgraphicsscene.h \
+  /usr/include/qt/QtWidgets/qlistview.h \
+  /usr/include/qt/QtWidgets/qlistwidget.h \
   /usr/include/qt/QtWidgets/qmainwindow.h \
+  /usr/include/qt/QtWidgets/qrubberband.h \
   /usr/include/qt/QtWidgets/qsizepolicy.h \
+  /usr/include/qt/QtWidgets/qslider.h \
   /usr/include/qt/QtWidgets/qstackedwidget.h \
+  /usr/include/qt/QtWidgets/qstyle.h \
+  /usr/include/qt/QtWidgets/qstyleoption.h \
+  /usr/include/qt/QtWidgets/qtabbar.h \
   /usr/include/qt/QtWidgets/qtabwidget.h \
   /usr/include/qt/QtWidgets/qtwidgets-config.h \
   /usr/include/qt/QtWidgets/qtwidgetsglobal.h \

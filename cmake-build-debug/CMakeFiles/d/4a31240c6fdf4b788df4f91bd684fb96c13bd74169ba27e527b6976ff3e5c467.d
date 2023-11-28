@@ -9,22 +9,24 @@ term_qt_autogen/timestamp: \
   /home/egerin/Projects/term_qt/src/ui/mainwindow/mainwindow.h \
   /home/egerin/Projects/term_qt/src/ui/mainwindow/mainwindow.ui \
   /home/egerin/Projects/term_qt/src/ui/secondscreen/Events.h \
+  /home/egerin/Projects/term_qt/src/ui/secondscreen/LRUCache.cpp \
+  /home/egerin/Projects/term_qt/src/ui/secondscreen/LRUCache.h \
+  /home/egerin/Projects/term_qt/src/ui/secondscreen/convert.cpp \
+  /home/egerin/Projects/term_qt/src/ui/secondscreen/convert.h \
   /home/egerin/Projects/term_qt/src/ui/secondscreen/custom_graphic/Events.cpp \
   /home/egerin/Projects/term_qt/src/ui/secondscreen/secondscreen.cpp \
   /home/egerin/Projects/term_qt/src/ui/secondscreen/secondscreen.h \
   /home/egerin/Projects/term_qt/src/ui/secondscreen/secondscreen.ui \
-  /home/egerin/Projects/term_qt/src_back/data/bmp_image.cpp \
-  /home/egerin/Projects/term_qt/src_back/data/header/bmp_header.h \
-  /home/egerin/Projects/term_qt/src_back/data/header/bmp_image.h \
-  /home/egerin/Projects/term_qt/src_back/data/header/image.h \
-  /home/egerin/Projects/term_qt/src_back/data/header/pixel.h \
-  /home/egerin/Projects/term_qt/src_back/data/header/ppm_image.h \
-  /home/egerin/Projects/term_qt/src_back/data/image.cpp \
-  /home/egerin/Projects/term_qt/src_back/data/ppm_image.cpp \
-  /home/egerin/Projects/term_qt/src_back/data_model/convert.cpp \
-  /home/egerin/Projects/term_qt/src_back/data_model/convert.h \
-  /home/egerin/Projects/term_qt/src_back/data_model/get_bmp_data/BMPImageProcess.cpp \
-  /home/egerin/Projects/term_qt/src_back/data_model/get_bmp_data/BMPImageProcess.h \
+  /home/egerin/Projects/term_qt/src/ui/secondscreen/src_back/data/bmp_image.cpp \
+  /home/egerin/Projects/term_qt/src/ui/secondscreen/src_back/data/header/bmp_header.h \
+  /home/egerin/Projects/term_qt/src/ui/secondscreen/src_back/data/header/bmp_image.h \
+  /home/egerin/Projects/term_qt/src/ui/secondscreen/src_back/data/header/image.h \
+  /home/egerin/Projects/term_qt/src/ui/secondscreen/src_back/data/header/pixel.h \
+  /home/egerin/Projects/term_qt/src/ui/secondscreen/src_back/data/header/ppm_image.h \
+  /home/egerin/Projects/term_qt/src/ui/secondscreen/src_back/data/image.cpp \
+  /home/egerin/Projects/term_qt/src/ui/secondscreen/src_back/data/ppm_image.cpp \
+  /home/egerin/Projects/term_qt/src/ui/secondscreen/src_back/data_model/get_bmp_data/BMPImageProcess.cpp \
+  /home/egerin/Projects/term_qt/src/ui/secondscreen/src_back/data_model/get_bmp_data/BMPImageProcess.h \
   /usr/bin/cmake \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
@@ -262,7 +264,9 @@ term_qt_autogen/timestamp: \
   /usr/include/pthread.h \
   /usr/include/qt/QtCore/QDebug \
   /usr/include/qt/QtCore/QDir \
+  /usr/include/qt/QtCore/QMap \
   /usr/include/qt/QtCore/QMimeData \
+  /usr/include/qt/QtCore/QSet \
   /usr/include/qt/QtCore/QString \
   /usr/include/qt/QtCore/qabstractitemmodel.h \
   /usr/include/qt/QtCore/qalgorithms.h \

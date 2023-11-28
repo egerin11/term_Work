@@ -12,6 +12,8 @@
 #include <QFileDialog>
 #include <QDir>
 #include <QDebug>
+#include "LRUCache.h"
+
 QT_BEGIN_NAMESPACE
 namespace Ui { class SecondScreen; }
 QT_END_NAMESPACE
@@ -30,6 +32,7 @@ private slots:
 private:
     Ui::SecondScreen *ui;
     QGraphicsScene * scene;
+    LRUCache* lrucache_;
 };
 
 

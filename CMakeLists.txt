@@ -22,18 +22,20 @@ add_executable(term_qt src/main.cpp
         src/ui/secondscreen/secondscreen.ui
         src/ui/secondscreen/custom_graphic/Events.cpp
         src/ui/secondscreen/Events.h
-        src_back/data_model/convert.cpp
-        src_back/data_model/convert.h
-        src_back/data_model/get_bmp_data/BMPImageProcess.cpp
-        src_back/data_model/get_bmp_data/BMPImageProcess.h
-        src_back/data/bmp_image.cpp
-        src_back/data/image.cpp
-        src_back/data/header/ppm_image.h
-        src_back/data/header/bmp_image.h
-        src_back/data/header/bmp_header.h
-        src_back/data/header/pixel.h
-        src_back/data/header/image.h
-        src_back/data/ppm_image.cpp
+        src/ui/secondscreen/convert.cpp
+        src/ui/secondscreen/convert.h
+        src/ui/secondscreen/src_back/data_model/get_bmp_data/BMPImageProcess.cpp
+        src/ui/secondscreen/src_back/data_model/get_bmp_data/BMPImageProcess.h
+        src/ui/secondscreen/src_back/data/bmp_image.cpp
+        src/ui/secondscreen/src_back/data/image.cpp
+        src/ui/secondscreen/src_back/data/header/ppm_image.h
+        src/ui/secondscreen/src_back/data/header/bmp_image.h
+        src/ui/secondscreen/src_back/data/header/bmp_header.h
+        src/ui/secondscreen/src_back/data/header/pixel.h
+        src/ui/secondscreen/src_back/data/header/image.h
+        src/ui/secondscreen/src_back/data/ppm_image.cpp
+        src/ui/secondscreen/LRUCache.cpp
+        src/ui/secondscreen/LRUCache.h
 
 )
 target_link_libraries(term_qt

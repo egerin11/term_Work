@@ -102,51 +102,57 @@
 			null
 		],
 		[
+			"/home/egerin/Projects/term_qt/src/ui/secondscreen/LRUCache.h",
+			"MU",
+			"B5DKXFG7MI/moc_LRUCache.cpp",
+			null
+		],
+		[
+			"/home/egerin/Projects/term_qt/src/ui/secondscreen/convert.h",
+			"MU",
+			"B5DKXFG7MI/moc_convert.cpp",
+			null
+		],
+		[
 			"/home/egerin/Projects/term_qt/src/ui/secondscreen/secondscreen.h",
 			"MU",
 			"B5DKXFG7MI/moc_secondscreen.cpp",
 			null
 		],
 		[
-			"/home/egerin/Projects/term_qt/src_back/data/header/bmp_header.h",
+			"/home/egerin/Projects/term_qt/src/ui/secondscreen/src_back/data/header/bmp_header.h",
 			"MU",
-			"HIWW3WNWPI/moc_bmp_header.cpp",
+			"ZP7ZLJYYBH/moc_bmp_header.cpp",
 			null
 		],
 		[
-			"/home/egerin/Projects/term_qt/src_back/data/header/bmp_image.h",
+			"/home/egerin/Projects/term_qt/src/ui/secondscreen/src_back/data/header/bmp_image.h",
 			"MU",
-			"HIWW3WNWPI/moc_bmp_image.cpp",
+			"ZP7ZLJYYBH/moc_bmp_image.cpp",
 			null
 		],
 		[
-			"/home/egerin/Projects/term_qt/src_back/data/header/image.h",
+			"/home/egerin/Projects/term_qt/src/ui/secondscreen/src_back/data/header/image.h",
 			"MU",
-			"HIWW3WNWPI/moc_image.cpp",
+			"ZP7ZLJYYBH/moc_image.cpp",
 			null
 		],
 		[
-			"/home/egerin/Projects/term_qt/src_back/data/header/pixel.h",
+			"/home/egerin/Projects/term_qt/src/ui/secondscreen/src_back/data/header/pixel.h",
 			"MU",
-			"HIWW3WNWPI/moc_pixel.cpp",
+			"ZP7ZLJYYBH/moc_pixel.cpp",
 			null
 		],
 		[
-			"/home/egerin/Projects/term_qt/src_back/data/header/ppm_image.h",
+			"/home/egerin/Projects/term_qt/src/ui/secondscreen/src_back/data/header/ppm_image.h",
 			"MU",
-			"HIWW3WNWPI/moc_ppm_image.cpp",
+			"ZP7ZLJYYBH/moc_ppm_image.cpp",
 			null
 		],
 		[
-			"/home/egerin/Projects/term_qt/src_back/data_model/convert.h",
+			"/home/egerin/Projects/term_qt/src/ui/secondscreen/src_back/data_model/get_bmp_data/BMPImageProcess.h",
 			"MU",
-			"FRGYWVCAWX/moc_convert.cpp",
-			null
-		],
-		[
-			"/home/egerin/Projects/term_qt/src_back/data_model/get_bmp_data/BMPImageProcess.h",
-			"MU",
-			"3NE6KO2X7W/moc_BMPImageProcess.cpp",
+			"W6GZCXTDO2/moc_BMPImageProcess.cpp",
 			null
 		]
 	],
@@ -207,6 +213,16 @@
 			null
 		],
 		[
+			"/home/egerin/Projects/term_qt/src/ui/secondscreen/LRUCache.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/egerin/Projects/term_qt/src/ui/secondscreen/convert.cpp",
+			"MU",
+			null
+		],
+		[
 			"/home/egerin/Projects/term_qt/src/ui/secondscreen/custom_graphic/Events.cpp",
 			"MU",
 			null
@@ -217,23 +233,22 @@
 			null
 		],
 		[
-			"/home/egerin/Projects/term_qt/src_back/data/bmp_image.cpp",
-			"MU",
-			null
-		],
-		[ "/home/egerin/Projects/term_qt/src_back/data/image.cpp", "MU", null ],
-		[
-			"/home/egerin/Projects/term_qt/src_back/data/ppm_image.cpp",
+			"/home/egerin/Projects/term_qt/src/ui/secondscreen/src_back/data/bmp_image.cpp",
 			"MU",
 			null
 		],
 		[
-			"/home/egerin/Projects/term_qt/src_back/data_model/convert.cpp",
+			"/home/egerin/Projects/term_qt/src/ui/secondscreen/src_back/data/image.cpp",
 			"MU",
 			null
 		],
 		[
-			"/home/egerin/Projects/term_qt/src_back/data_model/get_bmp_data/BMPImageProcess.cpp",
+			"/home/egerin/Projects/term_qt/src/ui/secondscreen/src_back/data/ppm_image.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/egerin/Projects/term_qt/src/ui/secondscreen/src_back/data_model/get_bmp_data/BMPImageProcess.cpp",
 			"MU",
 			null
 		]
