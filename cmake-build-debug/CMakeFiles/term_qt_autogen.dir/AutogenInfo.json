@@ -7,11 +7,11 @@
 	"CMAKE_LIST_FILES" : 
 	[
 		"/home/egerin/Projects/term_qt/CMakeLists.txt",
-		"/home/egerin/Projects/term_qt/cmake-build-debug/CMakeFiles/3.27.7/CMakeSystem.cmake",
+		"/home/egerin/Projects/term_qt/cmake-build-debug/CMakeFiles/3.27.8/CMakeSystem.cmake",
 		"/usr/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake",
 		"/usr/share/cmake/Modules/Platform/Linux-Initialize.cmake",
-		"/home/egerin/Projects/term_qt/cmake-build-debug/CMakeFiles/3.27.7/CMakeCCompiler.cmake",
-		"/home/egerin/Projects/term_qt/cmake-build-debug/CMakeFiles/3.27.7/CMakeCXXCompiler.cmake",
+		"/home/egerin/Projects/term_qt/cmake-build-debug/CMakeFiles/3.27.8/CMakeCCompiler.cmake",
+		"/home/egerin/Projects/term_qt/cmake-build-debug/CMakeFiles/3.27.8/CMakeCXXCompiler.cmake",
 		"/usr/share/cmake/Modules/CMakeSystemSpecificInformation.cmake",
 		"/usr/share/cmake/Modules/CMakeGenericSystem.cmake",
 		"/usr/share/cmake/Modules/CMakeInitializeConfigs.cmake",
@@ -82,7 +82,8 @@
 		"/usr/lib/cmake/Qt5Widgets/Qt5WidgetsConfig.cmake",
 		"/usr/lib/cmake/Qt5Widgets/Qt5WidgetsConfigExtras.cmake",
 		"/usr/lib/cmake/Qt5Widgets/Qt5WidgetsMacros.cmake",
-		"/usr/share/cmake/Modules/CMakeParseArguments.cmake"
+		"/usr/share/cmake/Modules/CMakeParseArguments.cmake",
+		"/home/egerin/Projects/term_qt/icon_app.qrc"
 	],
 	"CMAKE_SOURCE_DIR" : "/home/egerin/Projects/term_qt",
 	"DEP_FILE" : "/home/egerin/Projects/term_qt/cmake-build-debug/term_qt_autogen/deps",

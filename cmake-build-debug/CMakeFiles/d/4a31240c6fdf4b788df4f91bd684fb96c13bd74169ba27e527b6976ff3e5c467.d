@@ -1,9 +1,10 @@
 term_qt_autogen/timestamp: \
   /home/egerin/Projects/term_qt/CMakeLists.txt \
-  CMakeFiles/3.27.7/CMakeCCompiler.cmake \
-  CMakeFiles/3.27.7/CMakeCXXCompiler.cmake \
-  CMakeFiles/3.27.7/CMakeSystem.cmake \
+  CMakeFiles/3.27.8/CMakeCCompiler.cmake \
+  CMakeFiles/3.27.8/CMakeCXXCompiler.cmake \
+  CMakeFiles/3.27.8/CMakeSystem.cmake \
   term_qt_autogen/moc_predefs.h \
+  /home/egerin/Projects/term_qt/icon_app.qrc \
   /home/egerin/Projects/term_qt/src/main.cpp \
   /home/egerin/Projects/term_qt/src/ui/mainwindow/mainwindow.cpp \
   /home/egerin/Projects/term_qt/src/ui/mainwindow/mainwindow.h \

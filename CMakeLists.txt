@@ -13,7 +13,8 @@ find_package(Qt5 COMPONENTS
         Widgets
         REQUIRED)
 
-add_executable(term_qt src/main.cpp
+add_executable(term_qt icon_app.qrc
+        src/main.cpp
         src/ui/mainwindow/mainwindow.cpp
         src/ui/mainwindow/mainwindow.h
         src/ui/mainwindow/mainwindow.ui

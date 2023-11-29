@@ -16,16 +16,17 @@ public:
             : QObject(parent), listWidget_(listWidget), capacity_(capacity) {
         connect(listWidget, &QListWidget::itemClicked, this, &LRUCache::on_item_clicked);
     }
-    void addItem(QListWidgetItem* item);
-private slots:
 
+    void addItem(QListWidgetItem* item);
+
+private slots:
     void on_item_clicked(QListWidgetItem* item);
+
 private:
     void remove_item_from_list_widget(const QString& key);
     QListWidget* listWidget_;
     int capacity_;
-    QSet<QString> items_;
-    QStringList lruList_;
+    QVector<QString> items_;  // Using QVector to maintain the order
 };
 
 

@@ -5,6 +5,7 @@
 #include<QDebug>
 #include <QTextCodec>
 #include <fstream>
+#include <cmath>
 
 //void Convert::ascii(const Image *image, Ui::SecondScreen *ui) {
 //    const std::string ASCII_LIST = "$@B%8&WM#*oahkbdpqwmZO0QLCJUYXzcvunxrjft/|()1{}[]?-_+~<>i!lI;:,\"^`'. ";
@@ -25,7 +26,6 @@ void Convert::ascii(const Image *image,const std::string& outputFilePath) {
     const std::string ASCII_LIST = "$@B%8&WM#*oahkbdpqwmZO0QLCJUYXzcvunxrjft/|()1{}[]?-_+~<>i!lI;:,\"^`'. ";
     std::vector<std::vector<Pixel>> pixels = image->get_pixels();
 
-    // Открываем файл для записи
     std::ofstream outputFile(outputFilePath);
 
     if (outputFile.is_open()) {
@@ -77,31 +77,57 @@ Pixel Convert::bilinear_interpolation(const Pixel &q11, const Pixel &q12, const 
 std::vector<std::vector<Pixel>> Convert::resized_image(Image *image, int new_height, int new_width) {
     std::vector<std::vector<Pixel>> resized_image(new_height, std::vector<Pixel>(new_width));
     std::vector<std::vector<Pixel>> pixel = image->get_pixels();
-    int original_height = image->get_height();
-    int original_width = image->get_width();
-    double scale_x = (double) original_width / new_width;
-    double scale_y = (double) original_height / new_height;
+
+    int old_h = image->get_height();
+    int old_w = image->get_width();
+    image->set_height(new_height);
+    image->set_width(new_width);
+    float w_scale_factor = static_cast<float>(old_w) / static_cast<float>(new_width);
+    float h_scale_factor = static_cast<float>(old_h) / static_cast<float>(new_height);
 
     for (int i = 0; i < new_height; i++) {
         for (int j = 0; j < new_width; j++) {
-            double x = scale_x * j;
-            double y = scale_y * i;
+            float x = i * h_scale_factor;
+            float y = j * w_scale_factor;
 
-            int x_int = (int) x;
-            int y_int = (int) y;
+            int x_floor = static_cast<int>(floor(x));
+            int x_ceil = std::min(old_h - 1, static_cast<int>(ceil(x)));
+            int y_floor = static_cast<int>(floor(y));
+            int y_ceil = std::min(old_w - 1, static_cast<int>(ceil(y)));
 
-            double x_diff = x - x_int;
-            double y_diff = y - y_int;
+            if (x_ceil == x_floor && y_ceil == y_floor) {
+                resized_image[i][j] = pixel[x_floor][y_floor];
+            } else if (x_ceil == x_floor) {
+                Pixel q1 = pixel[x_floor][y_ceil];
+                Pixel q2 = pixel[x_floor][y_floor];
+                Pixel q;
+                q = q1* (y_ceil - y) + q2 * (y - y_floor);
 
-            if (x_int + 1 < original_width && y_int + 1 < original_height) {
-                resized_image[i][j] = bilinear_interpolation(pixel[y_int][x_int], pixel[y_int][x_int + 1],
-                                                             pixel[y_int + 1][x_int], pixel[y_int + 1][x_int + 1],
-                                                             x_diff, y_diff);
+                resized_image[i][j] = q;
+            } else if (y_ceil == y_floor) {
+                Pixel q1 = pixel[x_ceil][y_floor];
+                Pixel q2 = pixel[x_floor][y_floor];
+                Pixel q;
+                q = q1 * (x_ceil - x) + q2 * (x - x_floor);
+
+                resized_image[i][j] = q;
             } else {
-                resized_image[i][j] = pixel[y_int][x_int];
+                Pixel v1 = pixel[x_floor][y_floor];
+                Pixel v2 = pixel[x_ceil][y_floor];
+                Pixel v3 = pixel[x_floor][y_ceil];
+                Pixel v4 = pixel[x_ceil][y_ceil];
+                Pixel q1, q2, q;
+                q1 = v1 * (x_ceil - x) + v2* (x - x_floor);
+
+                q2 = v3 * (x_ceil - x) + v4 * (x - x_floor);
+
+                q = q1 * (y_ceil - y) + q2 * (y - y_floor);
+
+                resized_image[i][j] = q;
             }
         }
     }
+
     return resized_image;
 }
 

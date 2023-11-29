@@ -23,37 +23,36 @@ private:
     unsigned char m_green;
     unsigned char m_red;
 public:
-    Pixel() : m_blue(0), m_green(0), m_red(0) {}
-
-    Pixel(unsigned char blue, unsigned char green, unsigned char red)
-            : m_blue(blue), m_green(green), m_red(red) {}
-
-
-    Pixel operator/(double value) const {
+    Pixel operator+(const Pixel& other) const {
         Pixel result;
-        result.m_red = m_red / (unsigned char) value;
-        result.m_green = m_green / (unsigned char) value;
-        result.m_blue = m_blue / (unsigned char) value;
+        result.m_red = static_cast<unsigned char>( static_cast<int>(m_red) + static_cast<int>(other.m_red));
+        result.m_green = static_cast<unsigned char>( static_cast<int>(m_green) + static_cast<int>(other.m_green));
+        result.m_blue = static_cast<unsigned char>( static_cast<int>(m_blue) + static_cast<int>(other.m_blue));
         return result;
     }
 
-    Pixel &operator+=(const Pixel &other) {
-        m_red += other.m_red;
-        m_green += other.m_green;
-        m_blue += other.m_blue;
-        return *this;
+    Pixel operator-(const Pixel& other) const {
+        Pixel result;
+        result.m_red = static_cast<unsigned char>(static_cast<int>(m_red) - static_cast<int>(other.m_red));
+        result.m_green = static_cast<unsigned char>( static_cast<int>(m_green) - static_cast<int>(other.m_green));
+        result.m_blue = static_cast<unsigned char>( static_cast<int>(m_blue) - static_cast<int>(other.m_blue));
+        return result;
     }
 
-    Pixel operator*(double value) const {
-        return {static_cast<unsigned char>(m_blue * value),
-                static_cast<unsigned char>(m_green * value),
-                static_cast<unsigned char>(m_red * value)};
+    Pixel operator*(float scalar) const {
+        Pixel result;
+        result.m_red = static_cast<unsigned char>( static_cast<float >(m_red) * scalar);
+        result.m_green = static_cast<unsigned char>( static_cast<float >(m_green) * scalar);
+        result.m_blue = static_cast<unsigned char>(static_cast<float >(m_blue) * scalar);
+        return result;
     }
 
-    Pixel operator+(const Pixel &other) const {
-        return {static_cast<unsigned char>(m_blue + other.m_blue),
-                static_cast<unsigned char>(m_green + other.m_green),
-                static_cast<unsigned char>(m_red + other.m_red)};
+    bool operator==(const Pixel& other) const {
+        return m_red == other.m_red && m_green == other.m_green && m_blue == other.m_blue;
+    }
+
+    bool operator!=(const Pixel& other) const {
+        return !(*this == other);
     }
 
 };

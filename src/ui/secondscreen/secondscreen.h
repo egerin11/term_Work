@@ -36,8 +36,7 @@ private:
     void load_image(const QString &filePath);
     Ui::SecondScreen *ui;
     QGraphicsScene *scene;
-    LRUCache *lrucache_;
-};
+    LRUCache *lrucache;};
 
 
 #endif //TERM_QT_SECONDSCREEN_H

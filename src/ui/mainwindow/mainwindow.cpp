@@ -5,7 +5,6 @@
 #include <QDebug>
 
 
-
 MainWindow::MainWindow(QWidget *parent)
         : QMainWindow(parent), ui(new Ui::MainWindow) {
     ui->setupUi(this);
@@ -21,20 +20,17 @@ MainWindow::MainWindow(QWidget *parent)
 
     stackedWidget->addWidget(ui->centralwidget);
 
+    secondScreen = new SecondScreen(this);
+    stackedWidget->addWidget(secondScreen);
+
     setCentralWidget(stackedWidget);
 }
+
+void MainWindow::on_pushButton_clicked() {
+    stackedWidget->setCurrentWidget(secondScreen);
+}
+
 
 MainWindow::~MainWindow() {
     delete ui;
 }
-
-
-void MainWindow::on_pushButton_clicked() {
-    if (!secondScreen) {
-        secondScreen = new SecondScreen(this);
-        stackedWidget->addWidget(secondScreen);
-    }
-    stackedWidget->setCurrentWidget(secondScreen);
-
-    }
-
