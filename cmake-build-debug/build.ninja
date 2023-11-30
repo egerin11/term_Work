@@ -221,7 +221,7 @@ build term_qt_autogen/EWIEGA46WW/qrc_icon_app.cpp | ${cmake_ninja_workdir}term_q
 #############################################
 # Phony custom command for CMakeFiles/term_qt_autogen_timestamp_deps
 
-build CMakeFiles/term_qt_autogen_timestamp_deps | ${cmake_ninja_workdir}CMakeFiles/term_qt_autogen_timestamp_deps: phony /usr/lib/libQt5Core.so.5.15.11 /usr/bin/moc /usr/lib/libQt5Gui.so.5.15.11 /usr/lib/libQt5Widgets.so.5.15.11 /usr/bin/uic
+build CMakeFiles/term_qt_autogen_timestamp_deps | ${cmake_ninja_workdir}CMakeFiles/term_qt_autogen_timestamp_deps: phony /usr/lib/libQt5Widgets.so.5.15.11 /usr/lib/libQt5Core.so.5.15.11 /usr/bin/moc /usr/lib/libQt5Gui.so.5.15.11 /usr/bin/uic
 
 
 #############################################

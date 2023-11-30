@@ -1,6 +1,3 @@
-//
-// Created by egerin on 11/27/23.
-//
 
 #ifndef TERM_QT_EVENTS_H
 #define TERM_QT_EVENTS_H
@@ -19,7 +16,7 @@ public:
 class CustomGraphicsView:public QGraphicsView{
 Q_OBJECT
 signals:
-    void itemDrop(QListWidgetItem*);
+    void item_drop(QListWidgetItem*);
 public:
     explicit CustomGraphicsView (QWidget *widget=nullptr);
 protected:

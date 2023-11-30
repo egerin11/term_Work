@@ -23,7 +23,7 @@ QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_CustomGraphicsView_t {
     QByteArrayData data[4];
-    char stringdata0[46];
+    char stringdata0[47];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -33,12 +33,12 @@ struct qt_meta_stringdata_CustomGraphicsView_t {
 static const qt_meta_stringdata_CustomGraphicsView_t qt_meta_stringdata_CustomGraphicsView = {
     {
 QT_MOC_LITERAL(0, 0, 18), // "CustomGraphicsView"
-QT_MOC_LITERAL(1, 19, 8), // "itemDrop"
-QT_MOC_LITERAL(2, 28, 0), // ""
-QT_MOC_LITERAL(3, 29, 16) // "QListWidgetItem*"
+QT_MOC_LITERAL(1, 19, 9), // "item_drop"
+QT_MOC_LITERAL(2, 29, 0), // ""
+QT_MOC_LITERAL(3, 30, 16) // "QListWidgetItem*"
 
     },
-    "CustomGraphicsView\0itemDrop\0\0"
+    "CustomGraphicsView\0item_drop\0\0"
     "QListWidgetItem*"
 };
 #undef QT_MOC_LITERAL
@@ -71,14 +71,14 @@ void CustomGraphicsView::qt_static_metacall(QObject *_o, QMetaObject::Call _c, i
         auto *_t = static_cast<CustomGraphicsView *>(_o);
         (void)_t;
         switch (_id) {
-        case 0: _t->itemDrop((*reinterpret_cast< QListWidgetItem*(*)>(_a[1]))); break;
+        case 0: _t->item_drop((*reinterpret_cast< QListWidgetItem*(*)>(_a[1]))); break;
         default: ;
         }
     } else if (_c == QMetaObject::IndexOfMethod) {
         int *result = reinterpret_cast<int *>(_a[0]);
         {
             using _t = void (CustomGraphicsView::*)(QListWidgetItem * );
-            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&CustomGraphicsView::itemDrop)) {
+            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&CustomGraphicsView::item_drop)) {
                 *result = 0;
                 return;
             }
@@ -127,7 +127,7 @@ int CustomGraphicsView::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 }
 
 // SIGNAL 0
-void CustomGraphicsView::itemDrop(QListWidgetItem * _t1)
+void CustomGraphicsView::item_drop(QListWidgetItem * _t1)
 {
     void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t1))) };
     QMetaObject::activate(this, &staticMetaObject, 0, _a);

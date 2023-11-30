@@ -86,14 +86,14 @@ void CustomGraphicsView::dropEvent(QDropEvent *event) {
 //
 //        QLabel *label = qobject_cast<QLabel*>(event->source());
 //        QImage Label_Image = label->pixmap()->toImage();
-//        emit itemDrop(Label_Image);
+//        emit item_drop(Label_Image);
 //    } else {
 //        event->ignore();
 //    }
     if (event->source() == this) return;
     QListWidget *listWidget = qobject_cast<QListWidget *>(event->source());
     QListWidgetItem *listWidgetItem = listWidget->currentItem()->clone();
-    emit itemDrop(listWidgetItem);
+    emit item_drop(listWidgetItem);
 
 }
 

@@ -20,7 +20,12 @@ SecondScreen::SecondScreen(QWidget *parent) :
     palette.setBrush(QPalette::Window, brush);
     this->setPalette(palette);
     connect(ui->listWidget, &QListWidget::itemClicked, this, &SecondScreen::on_list_item_clicked);
+//    customGraphicsView = new CustomGraphicsView(this);
+//    connect(customGraphicsView,&CustomGraphicsView::item_drop,eve);
+    ui->listWidget->setDragEnabled(true);
+    ui->listWidget->setDragDropMode(QAbstractItemView::DragDrop);
 }
+
 
 
 SecondScreen::~SecondScreen() {

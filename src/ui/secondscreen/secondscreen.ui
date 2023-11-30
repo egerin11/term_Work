@@ -63,7 +63,7 @@ border: 1px solid #8A3E24;</string>
   <customwidget>
    <class>CustomGraphicsView</class>
    <extends>QGraphicsView</extends>
-   <header>ui/secondscreen/Events.h</header>
+   <header>../../../Events.h</header>
   </customwidget>
  </customwidgets>
  <resources/>

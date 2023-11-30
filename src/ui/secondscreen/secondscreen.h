@@ -13,7 +13,7 @@
 #include <QDir>
 #include <QDebug>
 #include "LRUCache.h"
-
+#include "Events.h"
 QT_BEGIN_NAMESPACE
 namespace Ui { class SecondScreen; }
 QT_END_NAMESPACE
@@ -36,7 +36,9 @@ private:
     void load_image(const QString &filePath);
     Ui::SecondScreen *ui;
     QGraphicsScene *scene;
-    LRUCache *lrucache;};
+    LRUCache *lrucache;
+    CustomGraphicsView *customGraphicsView;
+};
 
 
 #endif //TERM_QT_SECONDSCREEN_H

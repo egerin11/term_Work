@@ -16,7 +16,7 @@
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QWidget>
 //#include "../../../Events.h"
-#include<QGraphicsView>
+#include <QGraphicsView>
 QT_BEGIN_NAMESPACE
 
 class Ui_SecondScreen
