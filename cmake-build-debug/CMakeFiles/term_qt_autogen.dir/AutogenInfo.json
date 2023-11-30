@@ -7,11 +7,11 @@
 	"CMAKE_LIST_FILES" : 
 	[
 		"/home/egerin/Projects/term_qt/CMakeLists.txt",
-		"/home/egerin/Projects/term_qt/cmake-build-debug/CMakeFiles/3.27.7/CMakeSystem.cmake",
+		"/home/egerin/Projects/term_qt/cmake-build-debug/CMakeFiles/3.27.8/CMakeSystem.cmake",
 		"/usr/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake",
 		"/usr/share/cmake/Modules/Platform/Linux-Initialize.cmake",
-		"/home/egerin/Projects/term_qt/cmake-build-debug/CMakeFiles/3.27.7/CMakeCCompiler.cmake",
-		"/home/egerin/Projects/term_qt/cmake-build-debug/CMakeFiles/3.27.7/CMakeCXXCompiler.cmake",
+		"/home/egerin/Projects/term_qt/cmake-build-debug/CMakeFiles/3.27.8/CMakeCCompiler.cmake",
+		"/home/egerin/Projects/term_qt/cmake-build-debug/CMakeFiles/3.27.8/CMakeCXXCompiler.cmake",
 		"/usr/share/cmake/Modules/CMakeSystemSpecificInformation.cmake",
 		"/usr/share/cmake/Modules/CMakeGenericSystem.cmake",
 		"/usr/share/cmake/Modules/CMakeInitializeConfigs.cmake",
@@ -82,7 +82,8 @@
 		"/usr/lib/cmake/Qt5Widgets/Qt5WidgetsConfig.cmake",
 		"/usr/lib/cmake/Qt5Widgets/Qt5WidgetsConfigExtras.cmake",
 		"/usr/lib/cmake/Qt5Widgets/Qt5WidgetsMacros.cmake",
-		"/usr/share/cmake/Modules/CMakeParseArguments.cmake"
+		"/usr/share/cmake/Modules/CMakeParseArguments.cmake",
+		"/home/egerin/Projects/term_qt/icon_app.qrc"
 	],
 	"CMAKE_SOURCE_DIR" : "/home/egerin/Projects/term_qt",
 	"DEP_FILE" : "/home/egerin/Projects/term_qt/cmake-build-debug/term_qt_autogen/deps",
@@ -96,9 +97,63 @@
 			null
 		],
 		[
+			"/home/egerin/Projects/term_qt/src/ui/secondscreen/Events.h",
+			"MU",
+			"B5DKXFG7MI/moc_Events.cpp",
+			null
+		],
+		[
+			"/home/egerin/Projects/term_qt/src/ui/secondscreen/LRUCache.h",
+			"MU",
+			"B5DKXFG7MI/moc_LRUCache.cpp",
+			null
+		],
+		[
+			"/home/egerin/Projects/term_qt/src/ui/secondscreen/convert.h",
+			"MU",
+			"B5DKXFG7MI/moc_convert.cpp",
+			null
+		],
+		[
 			"/home/egerin/Projects/term_qt/src/ui/secondscreen/secondscreen.h",
 			"MU",
 			"B5DKXFG7MI/moc_secondscreen.cpp",
+			null
+		],
+		[
+			"/home/egerin/Projects/term_qt/src/ui/secondscreen/src_back/data/header/bmp_header.h",
+			"MU",
+			"ZP7ZLJYYBH/moc_bmp_header.cpp",
+			null
+		],
+		[
+			"/home/egerin/Projects/term_qt/src/ui/secondscreen/src_back/data/header/bmp_image.h",
+			"MU",
+			"ZP7ZLJYYBH/moc_bmp_image.cpp",
+			null
+		],
+		[
+			"/home/egerin/Projects/term_qt/src/ui/secondscreen/src_back/data/header/image.h",
+			"MU",
+			"ZP7ZLJYYBH/moc_image.cpp",
+			null
+		],
+		[
+			"/home/egerin/Projects/term_qt/src/ui/secondscreen/src_back/data/header/pixel.h",
+			"MU",
+			"ZP7ZLJYYBH/moc_pixel.cpp",
+			null
+		],
+		[
+			"/home/egerin/Projects/term_qt/src/ui/secondscreen/src_back/data/header/ppm_image.h",
+			"MU",
+			"ZP7ZLJYYBH/moc_ppm_image.cpp",
+			null
+		],
+		[
+			"/home/egerin/Projects/term_qt/src/ui/secondscreen/src_back/data_model/get_bmp_data/BMPImageProcess.h",
+			"MU",
+			"W6GZCXTDO2/moc_BMPImageProcess.cpp",
 			null
 		]
 	],
@@ -159,7 +214,42 @@
 			null
 		],
 		[
+			"/home/egerin/Projects/term_qt/src/ui/secondscreen/Events.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/egerin/Projects/term_qt/src/ui/secondscreen/LRUCache.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/egerin/Projects/term_qt/src/ui/secondscreen/convert.cpp",
+			"MU",
+			null
+		],
+		[
 			"/home/egerin/Projects/term_qt/src/ui/secondscreen/secondscreen.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/egerin/Projects/term_qt/src/ui/secondscreen/src_back/data/bmp_image.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/egerin/Projects/term_qt/src/ui/secondscreen/src_back/data/image.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/egerin/Projects/term_qt/src/ui/secondscreen/src_back/data/ppm_image.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/egerin/Projects/term_qt/src/ui/secondscreen/src_back/data_model/get_bmp_data/BMPImageProcess.cpp",
 			"MU",
 			null
 		]

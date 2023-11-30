@@ -1,0 +1,23 @@
+{
+	"BUILD_DIR" : "/home/egerin/Projects/term_qt/cmake-build-debug/term_qt_autogen",
+	"CMAKE_BINARY_DIR" : "/home/egerin/Projects/term_qt/cmake-build-debug",
+	"CMAKE_CURRENT_BINARY_DIR" : "/home/egerin/Projects/term_qt/cmake-build-debug",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/home/egerin/Projects/term_qt",
+	"CMAKE_SOURCE_DIR" : "/home/egerin/Projects/term_qt",
+	"INCLUDE_DIR" : "/home/egerin/Projects/term_qt/cmake-build-debug/term_qt_autogen/include",
+	"INPUTS" : 
+	[
+		"/home/egerin/Projects/term_qt/image/images.png",
+		"/home/egerin/Projects/term_qt/image/icon2.png"
+	],
+	"LOCK_FILE" : "/home/egerin/Projects/term_qt/cmake-build-debug/CMakeFiles/term_qt_autogen.dir/AutoRcc_icon_app_EWIEGA46WW_Lock.lock",
+	"MULTI_CONFIG" : false,
+	"OPTIONS" : [ "-name", "icon_app" ],
+	"OUTPUT_CHECKSUM" : "EWIEGA46WW",
+	"OUTPUT_NAME" : "qrc_icon_app.cpp",
+	"RCC_EXECUTABLE" : "/usr/bin/rcc",
+	"RCC_LIST_OPTIONS" : [ "--list" ],
+	"SETTINGS_FILE" : "/home/egerin/Projects/term_qt/cmake-build-debug/CMakeFiles/term_qt_autogen.dir/AutoRcc_icon_app_EWIEGA46WW_Used.txt",
+	"SOURCE" : "/home/egerin/Projects/term_qt/icon_app.qrc",
+	"VERBOSITY" : 0
+}

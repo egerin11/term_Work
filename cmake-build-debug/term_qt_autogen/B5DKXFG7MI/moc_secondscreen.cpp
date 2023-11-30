@@ -22,8 +22,8 @@ QT_BEGIN_MOC_NAMESPACE
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_SecondScreen_t {
-    QByteArrayData data[1];
-    char stringdata0[13];
+    QByteArrayData data[6];
+    char stringdata0[79];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -32,10 +32,16 @@ struct qt_meta_stringdata_SecondScreen_t {
     )
 static const qt_meta_stringdata_SecondScreen_t qt_meta_stringdata_SecondScreen = {
     {
-QT_MOC_LITERAL(0, 0, 12) // "SecondScreen"
+QT_MOC_LITERAL(0, 0, 12), // "SecondScreen"
+QT_MOC_LITERAL(1, 13, 20), // "on_list_item_clicked"
+QT_MOC_LITERAL(2, 34, 0), // ""
+QT_MOC_LITERAL(3, 35, 16), // "QListWidgetItem*"
+QT_MOC_LITERAL(4, 52, 4), // "item"
+QT_MOC_LITERAL(5, 57, 21) // "on_pushButton_clicked"
 
     },
-    "SecondScreen"
+    "SecondScreen\0on_list_item_clicked\0\0"
+    "QListWidgetItem*\0item\0on_pushButton_clicked"
 };
 #undef QT_MOC_LITERAL
 
@@ -45,22 +51,35 @@ static const uint qt_meta_data_SecondScreen[] = {
        8,       // revision
        0,       // classname
        0,    0, // classinfo
-       0,    0, // methods
+       2,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
        0,       // flags
        0,       // signalCount
 
+ // slots: name, argc, parameters, tag, flags
+       1,    1,   24,    2, 0x08 /* Private */,
+       5,    0,   27,    2, 0x08 /* Private */,
+
+ // slots: parameters
+    QMetaType::Void, 0x80000000 | 3,    4,
+    QMetaType::Void,
+
        0        // eod
 };
 
 void SecondScreen::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
-    (void)_o;
-    (void)_id;
-    (void)_c;
-    (void)_a;
+    if (_c == QMetaObject::InvokeMetaMethod) {
+        auto *_t = static_cast<SecondScreen *>(_o);
+        (void)_t;
+        switch (_id) {
+        case 0: _t->on_list_item_clicked((*reinterpret_cast< QListWidgetItem*(*)>(_a[1]))); break;
+        case 1: _t->on_pushButton_clicked(); break;
+        default: ;
+        }
+    }
 }
 
 QT_INIT_METAOBJECT const QMetaObject SecondScreen::staticMetaObject = { {
@@ -89,6 +108,17 @@ void *SecondScreen::qt_metacast(const char *_clname)
 int SecondScreen::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 {
     _id = QWidget::qt_metacall(_c, _id, _a);
+    if (_id < 0)
+        return _id;
+    if (_c == QMetaObject::InvokeMetaMethod) {
+        if (_id < 2)
+            qt_static_metacall(this, _c, _id, _a);
+        _id -= 2;
+    } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
+        if (_id < 2)
+            *reinterpret_cast<int*>(_a[0]) = -1;
+        _id -= 2;
+    }
     return _id;
 }
 QT_WARNING_POP

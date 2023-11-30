@@ -1,16 +1,33 @@
 term_qt_autogen/timestamp: \
   /home/egerin/Projects/term_qt/CMakeLists.txt \
-  CMakeFiles/3.27.7/CMakeCCompiler.cmake \
-  CMakeFiles/3.27.7/CMakeCXXCompiler.cmake \
-  CMakeFiles/3.27.7/CMakeSystem.cmake \
+  CMakeFiles/3.27.8/CMakeCCompiler.cmake \
+  CMakeFiles/3.27.8/CMakeCXXCompiler.cmake \
+  CMakeFiles/3.27.8/CMakeSystem.cmake \
   term_qt_autogen/moc_predefs.h \
+  /home/egerin/Projects/term_qt/icon_app.qrc \
   /home/egerin/Projects/term_qt/src/main.cpp \
   /home/egerin/Projects/term_qt/src/ui/mainwindow/mainwindow.cpp \
   /home/egerin/Projects/term_qt/src/ui/mainwindow/mainwindow.h \
   /home/egerin/Projects/term_qt/src/ui/mainwindow/mainwindow.ui \
+  /home/egerin/Projects/term_qt/src/ui/secondscreen/Events.cpp \
+  /home/egerin/Projects/term_qt/src/ui/secondscreen/Events.h \
+  /home/egerin/Projects/term_qt/src/ui/secondscreen/LRUCache.cpp \
+  /home/egerin/Projects/term_qt/src/ui/secondscreen/LRUCache.h \
+  /home/egerin/Projects/term_qt/src/ui/secondscreen/convert.cpp \
+  /home/egerin/Projects/term_qt/src/ui/secondscreen/convert.h \
   /home/egerin/Projects/term_qt/src/ui/secondscreen/secondscreen.cpp \
   /home/egerin/Projects/term_qt/src/ui/secondscreen/secondscreen.h \
   /home/egerin/Projects/term_qt/src/ui/secondscreen/secondscreen.ui \
+  /home/egerin/Projects/term_qt/src/ui/secondscreen/src_back/data/bmp_image.cpp \
+  /home/egerin/Projects/term_qt/src/ui/secondscreen/src_back/data/header/bmp_header.h \
+  /home/egerin/Projects/term_qt/src/ui/secondscreen/src_back/data/header/bmp_image.h \
+  /home/egerin/Projects/term_qt/src/ui/secondscreen/src_back/data/header/image.h \
+  /home/egerin/Projects/term_qt/src/ui/secondscreen/src_back/data/header/pixel.h \
+  /home/egerin/Projects/term_qt/src/ui/secondscreen/src_back/data/header/ppm_image.h \
+  /home/egerin/Projects/term_qt/src/ui/secondscreen/src_back/data/image.cpp \
+  /home/egerin/Projects/term_qt/src/ui/secondscreen/src_back/data/ppm_image.cpp \
+  /home/egerin/Projects/term_qt/src/ui/secondscreen/src_back/data_model/get_bmp_data/BMPImageProcess.cpp \
+  /home/egerin/Projects/term_qt/src/ui/secondscreen/src_back/data_model/get_bmp_data/BMPImageProcess.h \
   /usr/bin/cmake \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
@@ -38,6 +55,7 @@ term_qt_autogen/timestamp: \
   /usr/include/bits/pthreadtypes.h \
   /usr/include/bits/sched.h \
   /usr/include/bits/setjmp.h \
+  /usr/include/bits/stdio_lim.h \
   /usr/include/bits/struct_mutex.h \
   /usr/include/bits/struct_rwlock.h \
   /usr/include/bits/syscall.h \
@@ -49,14 +67,18 @@ term_qt_autogen/timestamp: \
   /usr/include/bits/types.h \
   /usr/include/bits/types/FILE.h \
   /usr/include/bits/types/__FILE.h \
+  /usr/include/bits/types/__fpos64_t.h \
+  /usr/include/bits/types/__fpos_t.h \
   /usr/include/bits/types/__locale_t.h \
   /usr/include/bits/types/__mbstate_t.h \
   /usr/include/bits/types/__sigset_t.h \
   /usr/include/bits/types/clock_t.h \
   /usr/include/bits/types/clockid_t.h \
+  /usr/include/bits/types/cookie_io_functions_t.h \
   /usr/include/bits/types/error_t.h \
   /usr/include/bits/types/locale_t.h \
   /usr/include/bits/types/mbstate_t.h \
+  /usr/include/bits/types/struct_FILE.h \
   /usr/include/bits/types/struct___jmp_buf_tag.h \
   /usr/include/bits/types/struct_itimerspec.h \
   /usr/include/bits/types/struct_sched_param.h \
@@ -241,6 +263,11 @@ term_qt_autogen/timestamp: \
   /usr/include/linux/errno.h \
   /usr/include/locale.h \
   /usr/include/pthread.h \
+  /usr/include/qt/QtCore/QDebug \
+  /usr/include/qt/QtCore/QDir \
+  /usr/include/qt/QtCore/QMap \
+  /usr/include/qt/QtCore/QSet \
+  /usr/include/qt/QtCore/qabstractitemmodel.h \
   /usr/include/qt/QtCore/qalgorithms.h \
   /usr/include/qt/QtCore/qarraydata.h \
   /usr/include/qt/QtCore/qatomic.h \
@@ -253,7 +280,14 @@ term_qt_autogen/timestamp: \
   /usr/include/qt/QtCore/qconfig.h \
   /usr/include/qt/QtCore/qcontainerfwd.h \
   /usr/include/qt/QtCore/qcontainertools_impl.h \
+  /usr/include/qt/QtCore/qcontiguouscache.h \
+  /usr/include/qt/QtCore/qcoreevent.h \
   /usr/include/qt/QtCore/qdatastream.h \
+  /usr/include/qt/QtCore/qdebug.h \
+  /usr/include/qt/QtCore/qdir.h \
+  /usr/include/qt/QtCore/qfile.h \
+  /usr/include/qt/QtCore/qfiledevice.h \
+  /usr/include/qt/QtCore/qfileinfo.h \
   /usr/include/qt/QtCore/qflags.h \
   /usr/include/qt/QtCore/qgenericatomic.h \
   /usr/include/qt/QtCore/qglobal.h \
@@ -261,10 +295,13 @@ term_qt_autogen/timestamp: \
   /usr/include/qt/QtCore/qhash.h \
   /usr/include/qt/QtCore/qhashfunctions.h \
   /usr/include/qt/QtCore/qiodevice.h \
+  /usr/include/qt/QtCore/qitemselectionmodel.h \
   /usr/include/qt/QtCore/qiterator.h \
   /usr/include/qt/QtCore/qline.h \
   /usr/include/qt/QtCore/qlist.h \
+  /usr/include/qt/QtCore/qlocale.h \
   /usr/include/qt/QtCore/qlogging.h \
+  /usr/include/qt/QtCore/qmap.h \
   /usr/include/qt/QtCore/qmargins.h \
   /usr/include/qt/QtCore/qmetatype.h \
   /usr/include/qt/QtCore/qnamespace.h \
@@ -279,7 +316,9 @@ term_qt_autogen/timestamp: \
   /usr/include/qt/QtCore/qrect.h \
   /usr/include/qt/QtCore/qrefcount.h \
   /usr/include/qt/QtCore/qregexp.h \
+  /usr/include/qt/QtCore/qregularexpression.h \
   /usr/include/qt/QtCore/qscopedpointer.h \
+  /usr/include/qt/QtCore/qset.h \
   /usr/include/qt/QtCore/qshareddata.h \
   /usr/include/qt/QtCore/qsharedpointer.h \
   /usr/include/qt/QtCore/qsharedpointer_impl.h \
@@ -293,13 +332,21 @@ term_qt_autogen/timestamp: \
   /usr/include/qt/QtCore/qsysinfo.h \
   /usr/include/qt/QtCore/qsystemdetection.h \
   /usr/include/qt/QtCore/qtcore-config.h \
+  /usr/include/qt/QtCore/qtextstream.h \
   /usr/include/qt/QtCore/qtypeinfo.h \
+  /usr/include/qt/QtCore/qurl.h \
+  /usr/include/qt/QtCore/qvariant.h \
   /usr/include/qt/QtCore/qvarlengtharray.h \
   /usr/include/qt/QtCore/qvector.h \
   /usr/include/qt/QtCore/qversiontagging.h \
+  /usr/include/qt/QtGui/QDragEnterEvent \
+  /usr/include/qt/QtGui/QDragLeaveEvent \
+  /usr/include/qt/QtGui/QDragMoveEvent \
+  /usr/include/qt/QtGui/QDropEvent \
   /usr/include/qt/QtGui/qbrush.h \
   /usr/include/qt/QtGui/qcolor.h \
   /usr/include/qt/QtGui/qcursor.h \
+  /usr/include/qt/QtGui/qevent.h \
   /usr/include/qt/QtGui/qfont.h \
   /usr/include/qt/QtGui/qfontinfo.h \
   /usr/include/qt/QtGui/qfontmetrics.h \
@@ -308,30 +355,61 @@ term_qt_autogen/timestamp: \
   /usr/include/qt/QtGui/qkeysequence.h \
   /usr/include/qt/QtGui/qmatrix.h \
   /usr/include/qt/QtGui/qpaintdevice.h \
+  /usr/include/qt/QtGui/qpainter.h \
+  /usr/include/qt/QtGui/qpainterpath.h \
   /usr/include/qt/QtGui/qpalette.h \
+  /usr/include/qt/QtGui/qpen.h \
   /usr/include/qt/QtGui/qpixelformat.h \
   /usr/include/qt/QtGui/qpixmap.h \
   /usr/include/qt/QtGui/qpolygon.h \
   /usr/include/qt/QtGui/qregion.h \
   /usr/include/qt/QtGui/qrgb.h \
   /usr/include/qt/QtGui/qrgba64.h \
+  /usr/include/qt/QtGui/qtextoption.h \
   /usr/include/qt/QtGui/qtgui-config.h \
   /usr/include/qt/QtGui/qtguiglobal.h \
+  /usr/include/qt/QtGui/qtouchdevice.h \
   /usr/include/qt/QtGui/qtransform.h \
+  /usr/include/qt/QtGui/qvalidator.h \
+  /usr/include/qt/QtGui/qvector2d.h \
   /usr/include/qt/QtGui/qwindowdefs.h \
+  /usr/include/qt/QtWidgets/QFileDialog \
+  /usr/include/qt/QtWidgets/QGraphicsPixmapItem \
+  /usr/include/qt/QtWidgets/QGraphicsScene \
+  /usr/include/qt/QtWidgets/QGraphicsView \
+  /usr/include/qt/QtWidgets/QListWidget \
   /usr/include/qt/QtWidgets/QMainWindow \
   /usr/include/qt/QtWidgets/QStackedWidget \
   /usr/include/qt/QtWidgets/QWidget \
+  /usr/include/qt/QtWidgets/qabstractitemdelegate.h \
+  /usr/include/qt/QtWidgets/qabstractitemview.h \
+  /usr/include/qt/QtWidgets/qabstractscrollarea.h \
+  /usr/include/qt/QtWidgets/qabstractslider.h \
+  /usr/include/qt/QtWidgets/qabstractspinbox.h \
+  /usr/include/qt/QtWidgets/qdialog.h \
+  /usr/include/qt/QtWidgets/qfiledialog.h \
   /usr/include/qt/QtWidgets/qframe.h \
+  /usr/include/qt/QtWidgets/qgraphicsitem.h \
+  /usr/include/qt/QtWidgets/qgraphicsscene.h \
+  /usr/include/qt/QtWidgets/qgraphicsview.h \
+  /usr/include/qt/QtWidgets/qlistview.h \
+  /usr/include/qt/QtWidgets/qlistwidget.h \
   /usr/include/qt/QtWidgets/qmainwindow.h \
+  /usr/include/qt/QtWidgets/qrubberband.h \
+  /usr/include/qt/QtWidgets/qscrollarea.h \
   /usr/include/qt/QtWidgets/qsizepolicy.h \
+  /usr/include/qt/QtWidgets/qslider.h \
   /usr/include/qt/QtWidgets/qstackedwidget.h \
+  /usr/include/qt/QtWidgets/qstyle.h \
+  /usr/include/qt/QtWidgets/qstyleoption.h \
+  /usr/include/qt/QtWidgets/qtabbar.h \
   /usr/include/qt/QtWidgets/qtabwidget.h \
   /usr/include/qt/QtWidgets/qtwidgets-config.h \
   /usr/include/qt/QtWidgets/qtwidgetsglobal.h \
   /usr/include/qt/QtWidgets/qwidget.h \
   /usr/include/sched.h \
   /usr/include/stdc-predef.h \
+  /usr/include/stdio.h \
   /usr/include/string.h \
   /usr/include/strings.h \
   /usr/include/sys/cdefs.h \
