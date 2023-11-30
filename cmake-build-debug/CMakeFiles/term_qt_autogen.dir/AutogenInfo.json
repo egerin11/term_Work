@@ -91,6 +91,12 @@
 	"HEADERS" : 
 	[
 		[
+			"/home/egerin/Projects/term_qt/src/ui/customwidget/customwidget.h",
+			"MU",
+			"ZUZ5ENXO2S/moc_customwidget.cpp",
+			null
+		],
+		[
 			"/home/egerin/Projects/term_qt/src/ui/mainwindow/mainwindow.h",
 			"MU",
 			"U4N2I235NK/moc_mainwindow.cpp",
@@ -208,6 +214,11 @@
 	"SOURCES" : 
 	[
 		[ "/home/egerin/Projects/term_qt/src/main.cpp", "MU", null ],
+		[
+			"/home/egerin/Projects/term_qt/src/ui/customwidget/customwidget.cpp",
+			"MU",
+			null
+		],
 		[
 			"/home/egerin/Projects/term_qt/src/ui/mainwindow/mainwindow.cpp",
 			"MU",

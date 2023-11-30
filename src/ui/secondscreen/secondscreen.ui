@@ -6,16 +6,81 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1224</width>
-    <height>658</height>
+    <width>1318</width>
+    <height>738</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>SecondScreen</string>
   </property>
-  <layout class="QGridLayout" name="gridLayout">
-   <item row="1" column="0">
+  <layout class="QGridLayout" name="gridLayout_2">
+   <item row="1" column="2">
+    <widget class="QPushButton" name="pushButton_2">
+     <property name="styleSheet">
+      <string notr="true">flex-shrink: 0;
+border-radius: 10px;
+border: 1px solid #8A3E24;
+background-color: 	#8A3E24;
+color: #F6F1F1;
+text-align: center;
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;</string>
+     </property>
+     <property name="text">
+      <string>edit</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="1">
+    <layout class="QHBoxLayout" name="horizontalLayout"/>
+   </item>
+   <item row="3" column="0">
+    <spacer name="horizontalSpacer">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>40</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="3" column="4">
+    <spacer name="horizontalSpacer_2">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>40</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="3" column="3">
+    <widget class="CustomListWidget" name="graphicsView">
+     <property name="minimumSize">
+      <size>
+       <width>600</width>
+       <height>600</height>
+      </size>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="1" colspan="2">
     <widget class="QListWidget" name="listWidget">
+     <property name="minimumSize">
+      <size>
+       <width>600</width>
+       <height>600</height>
+      </size>
+     </property>
      <property name="dragEnabled">
       <bool>true</bool>
      </property>
@@ -28,29 +93,19 @@
     </widget>
    </item>
    <item row="1" column="1">
-    <widget class="CustomGraphicsView" name="graphicsView">
-     <property name="minimumSize">
-      <size>
-       <width>600</width>
-       <height>600</height>
-      </size>
-     </property>
-    </widget>
-   </item>
-   <item row="0" column="0">
     <widget class="QPushButton" name="pushButton">
-     <property name="minimumSize">
-      <size>
-       <width>600</width>
-       <height>34</height>
-      </size>
-     </property>
      <property name="styleSheet">
-      <string notr="true">width: 96px;
-height: 32px;
+      <string notr="true">
 flex-shrink: 0;
 border-radius: 10px;
-border: 1px solid #8A3E24;</string>
+border: 1px solid #8A3E24;
+color: #8A3E24;
+text-align: center;
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;</string>
      </property>
      <property name="text">
       <string>file</string>
@@ -61,7 +116,7 @@ border: 1px solid #8A3E24;</string>
  </widget>
  <customwidgets>
   <customwidget>
-   <class>CustomGraphicsView</class>
+   <class>CustomListWidget</class>
    <extends>QGraphicsView</extends>
    <header>../../../Events.h</header>
   </customwidget>

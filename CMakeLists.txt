@@ -37,6 +37,9 @@ add_executable(term_qt icon_app.qrc
         src/ui/secondscreen/src_back/data/ppm_image.cpp
         src/ui/secondscreen/LRUCache.cpp
         src/ui/secondscreen/LRUCache.h
+        src/ui/customwidget/customwidget.cpp
+        src/ui/customwidget/customwidget.h
+        src/ui/customwidget/customwidget.ui
 
 )
 target_link_libraries(term_qt

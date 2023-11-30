@@ -13,6 +13,7 @@
 #include <QDir>
 #include <QDebug>
 #include "LRUCache.h"
+#include <QListWidget>
 #include "Events.h"
 QT_BEGIN_NAMESPACE
 namespace Ui { class SecondScreen; }
@@ -25,19 +26,24 @@ public:
     explicit SecondScreen(QWidget *parent = nullptr);
 
     ~SecondScreen() override;
-
+public slots:
+    void remove_item(const QString& text);
 private slots:
 
     void on_list_item_clicked(QListWidgetItem *item);
-
+    void handleItemDrop(QListWidgetItem *item);
     void on_pushButton_clicked();
+    void on_pushButton_2_clicked();
+//    void on_pushButton_3_clicked();
 
 private:
+    bool is_image(const QString &filePath);
     void load_image(const QString &filePath);
     Ui::SecondScreen *ui;
-    QGraphicsScene *scene;
+//    QGraphicsScene *scene;
     LRUCache *lrucache;
-    CustomGraphicsView *customGraphicsView;
+
+//    CustomListWidget *customGraphicsView;
 };
 
 

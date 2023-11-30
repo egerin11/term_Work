@@ -8,7 +8,8 @@
 	"INPUTS" : 
 	[
 		"/home/egerin/Projects/term_qt/image/images.png",
-		"/home/egerin/Projects/term_qt/image/icon2.png"
+		"/home/egerin/Projects/term_qt/image/icon2.png",
+		"/home/egerin/Projects/term_qt/image/button_icon.png"
 	],
 	"LOCK_FILE" : "/home/egerin/Projects/term_qt/cmake-build-debug/CMakeFiles/term_qt_autogen.dir/AutoRcc_icon_app_EWIEGA46WW_Lock.lock",
 	"MULTI_CONFIG" : false,

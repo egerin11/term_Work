@@ -1,116 +1,52 @@
 //
-// Created by egerin on 11/27/23.
+//#include <QLabel>
+//#include <QMimeData>
+//#include <QListWidget>
+//#include <QListWidgetItem>
+//#include "Events.h"
 //
-
-#include "Events.h"
-//#include <QDebug>
-//Custom_View::Custom_View(QWidget *parent):QGraphicsView(parent)
-//{
+//Events::Events() {
+//
+//}
+//
+//CustomListWidget::CustomListWidget(QWidget *widget) : QListWidget(widget) {
 //    setAcceptDrops(true);
-//    scene=new QGraphicsScene(this);
-//    setScene(scene);
-//    viewport()->installEventFilter(this);
 //}
 //
-//void Custom_View::dropEvent(QDropEvent *event) {
+//void CustomListWidget::dropEvent(QDropEvent *event) {
 //    if (event->source() == this) return;
-//    QDropEvent *DropEvent = static_cast<QDropEvent *>(event);
-//    if (DropEvent->mimeData()->hasUrls()) {
-//        QList<QUrl> urlslist = DropEvent->mimeData()->urls();
-//                foreach(QUrl url, urlslist) {
+//
+//    const QMimeData *mimeData = event->mimeData();
+//    if (mimeData->hasUrls()) {
+//        QList<QUrl> urls = mimeData->urls();
+//                foreach (const QUrl &url, urls) {
 //                if (url.isLocalFile()) {
+//                    QString filePath = url.toLocalFile();
+//                    QImage image(filePath);
+//                    if (!image.isNull()) {
+//                        QListWidgetItem *item = new QListWidgetItem;
+//                        item->setIcon(QIcon(QPixmap::fromImage(image)));
 //
-//                    QString FilePath = url.toLocalFile();
-//                    qDebug()<<"file"<<FilePath;
-//                    QPixmap pixmap(FilePath);
-//                    if (pixmap.isNull() == false) {
-//                        if (scene->items().count() > 0)scene->clear();
-//
-//                        QGraphicsPixmapItem *item = new QGraphicsPixmapItem(pixmap);
-//
-//                        scene->setSceneRect(pixmap.rect());
-//                        setSceneRect(scene->sceneRect());
-//                        fitInView(scene->sceneRect(), Qt::KeepAspectRatio);
-//                        scene->addItem(item);
-//                        DropEvent->acceptProposedAction();
-//
+//                        emit item_drop(item);
+//                        event->acceptProposedAction();
 //                    }
-//
 //                }
-//
 //            }
-//
 //    }
 //}
 //
+//void CustomListWidget::dragLeaveEvent(QDragLeaveEvent *event) {
+//    event->ignore();
+//}
 //
-//
-//void Custom_View::dragEnterEvent(QDragEnterEvent *event)
-//{
-//    QDragEnterEvent *DragEnterEvent=static_cast<QDragEnterEvent*>(event);
-//    if(DragEnterEvent->mimeData()->hasUrls()){
-//        DragEnterEvent->acceptProposedAction();
+//void CustomListWidget::dragEnterEvent(QDragEnterEvent *event) {
+//    const QMimeData *mimeData = event->mimeData();
+//    if (mimeData->hasUrls()) {
+//        event->acceptProposedAction();
 //    }
 //}
 //
-//void Custom_View::dragLeaveEvent(QDragLeaveEvent *event)
-//{
-//    event->accept();
-//}
-//
-//void Custom_View::dragMoveEvent(QDragMoveEvent *event)
-//{
-//
-//    event->accept();
+//void CustomListWidget::dragMoveEvent(QDragMoveEvent *event) {
 //    event->acceptProposedAction();
+//    event->accept();
 //}
-//
-//CustomGraphicsView::CustomGraphicsView(QWidget *widget) : QAbstractScrollArea(widget) {
-//
-//}
-#include<QLabel>
-#include<QMimeData>
-
-Events::Events() {
-
-}
-
-CustomGraphicsView::CustomGraphicsView(QWidget *widget) : QGraphicsView(widget) {
-    setAcceptDrops(true);
-
-}
-
-void CustomGraphicsView::dropEvent(QDropEvent *event) {
-//    if (event->mimeData()->hasFormat("Label")) {
-//        if (event->source() == this) return;
-//
-//        QLabel *label = qobject_cast<QLabel*>(event->source());
-//        QImage Label_Image = label->pixmap()->toImage();
-//        emit item_drop(Label_Image);
-//    } else {
-//        event->ignore();
-//    }
-    if (event->source() == this) return;
-    QListWidget *listWidget = qobject_cast<QListWidget *>(event->source());
-    QListWidgetItem *listWidgetItem = listWidget->currentItem()->clone();
-    emit item_drop(listWidgetItem);
-
-}
-
-void CustomGraphicsView::dragLeaveEvent(QDragLeaveEvent *event) {
-    event->ignore();
-}
-
-
-void CustomGraphicsView::dragEnterEvent(QDragEnterEvent *event) {
-    event->accept();
-    event->acceptProposedAction();
-
-}
-
-
-void CustomGraphicsView::dragMoveEvent(QDragMoveEvent *event) {
-    event->accept();
-    event->acceptProposedAction();
-}
-

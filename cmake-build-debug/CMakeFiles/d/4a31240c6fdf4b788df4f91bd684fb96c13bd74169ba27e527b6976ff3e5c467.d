@@ -6,6 +6,9 @@ term_qt_autogen/timestamp: \
   term_qt_autogen/moc_predefs.h \
   /home/egerin/Projects/term_qt/icon_app.qrc \
   /home/egerin/Projects/term_qt/src/main.cpp \
+  /home/egerin/Projects/term_qt/src/ui/customwidget/customwidget.cpp \
+  /home/egerin/Projects/term_qt/src/ui/customwidget/customwidget.h \
+  /home/egerin/Projects/term_qt/src/ui/customwidget/customwidget.ui \
   /home/egerin/Projects/term_qt/src/ui/mainwindow/mainwindow.cpp \
   /home/egerin/Projects/term_qt/src/ui/mainwindow/mainwindow.h \
   /home/egerin/Projects/term_qt/src/ui/mainwindow/mainwindow.ui \
@@ -281,7 +284,6 @@ term_qt_autogen/timestamp: \
   /usr/include/qt/QtCore/qcontainerfwd.h \
   /usr/include/qt/QtCore/qcontainertools_impl.h \
   /usr/include/qt/QtCore/qcontiguouscache.h \
-  /usr/include/qt/QtCore/qcoreevent.h \
   /usr/include/qt/QtCore/qdatastream.h \
   /usr/include/qt/QtCore/qdebug.h \
   /usr/include/qt/QtCore/qdir.h \
@@ -339,14 +341,9 @@ term_qt_autogen/timestamp: \
   /usr/include/qt/QtCore/qvarlengtharray.h \
   /usr/include/qt/QtCore/qvector.h \
   /usr/include/qt/QtCore/qversiontagging.h \
-  /usr/include/qt/QtGui/QDragEnterEvent \
-  /usr/include/qt/QtGui/QDragLeaveEvent \
-  /usr/include/qt/QtGui/QDragMoveEvent \
-  /usr/include/qt/QtGui/QDropEvent \
   /usr/include/qt/QtGui/qbrush.h \
   /usr/include/qt/QtGui/qcolor.h \
   /usr/include/qt/QtGui/qcursor.h \
-  /usr/include/qt/QtGui/qevent.h \
   /usr/include/qt/QtGui/qfont.h \
   /usr/include/qt/QtGui/qfontinfo.h \
   /usr/include/qt/QtGui/qfontmetrics.h \
@@ -355,7 +352,6 @@ term_qt_autogen/timestamp: \
   /usr/include/qt/QtGui/qkeysequence.h \
   /usr/include/qt/QtGui/qmatrix.h \
   /usr/include/qt/QtGui/qpaintdevice.h \
-  /usr/include/qt/QtGui/qpainter.h \
   /usr/include/qt/QtGui/qpainterpath.h \
   /usr/include/qt/QtGui/qpalette.h \
   /usr/include/qt/QtGui/qpen.h \
@@ -365,18 +361,14 @@ term_qt_autogen/timestamp: \
   /usr/include/qt/QtGui/qregion.h \
   /usr/include/qt/QtGui/qrgb.h \
   /usr/include/qt/QtGui/qrgba64.h \
-  /usr/include/qt/QtGui/qtextoption.h \
   /usr/include/qt/QtGui/qtgui-config.h \
   /usr/include/qt/QtGui/qtguiglobal.h \
-  /usr/include/qt/QtGui/qtouchdevice.h \
   /usr/include/qt/QtGui/qtransform.h \
   /usr/include/qt/QtGui/qvalidator.h \
-  /usr/include/qt/QtGui/qvector2d.h \
   /usr/include/qt/QtGui/qwindowdefs.h \
   /usr/include/qt/QtWidgets/QFileDialog \
   /usr/include/qt/QtWidgets/QGraphicsPixmapItem \
   /usr/include/qt/QtWidgets/QGraphicsScene \
-  /usr/include/qt/QtWidgets/QGraphicsView \
   /usr/include/qt/QtWidgets/QListWidget \
   /usr/include/qt/QtWidgets/QMainWindow \
   /usr/include/qt/QtWidgets/QStackedWidget \
@@ -391,12 +383,10 @@ term_qt_autogen/timestamp: \
   /usr/include/qt/QtWidgets/qframe.h \
   /usr/include/qt/QtWidgets/qgraphicsitem.h \
   /usr/include/qt/QtWidgets/qgraphicsscene.h \
-  /usr/include/qt/QtWidgets/qgraphicsview.h \
   /usr/include/qt/QtWidgets/qlistview.h \
   /usr/include/qt/QtWidgets/qlistwidget.h \
   /usr/include/qt/QtWidgets/qmainwindow.h \
   /usr/include/qt/QtWidgets/qrubberband.h \
-  /usr/include/qt/QtWidgets/qscrollarea.h \
   /usr/include/qt/QtWidgets/qsizepolicy.h \
   /usr/include/qt/QtWidgets/qslider.h \
   /usr/include/qt/QtWidgets/qstackedwidget.h \

@@ -17,7 +17,7 @@ void LRUCache::addItem(QListWidgetItem* item) {
 }
 
 void LRUCache::on_item_clicked(QListWidgetItem* item) {
-    addItem(item);  // Move the clicked item to the top
+    addItem(item);
 }
 
 void LRUCache::remove_item_from_list_widget(const QString& key) {

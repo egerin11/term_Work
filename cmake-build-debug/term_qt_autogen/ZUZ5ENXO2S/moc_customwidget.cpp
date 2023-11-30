@@ -1,5 +1,5 @@
 /****************************************************************************
-** Meta object code from reading C++ file 'Events.h'
+** Meta object code from reading C++ file 'customwidget.h'
 **
 ** Created by: The Qt Meta Object Compiler version 67 (Qt 5.15.11)
 **
@@ -7,11 +7,11 @@
 *****************************************************************************/
 
 #include <memory>
-#include "../../../src/ui/secondscreen/Events.h"
+#include "../../../src/ui/customwidget/customwidget.h"
 #include <QtCore/qbytearray.h>
 #include <QtCore/qmetatype.h>
 #if !defined(Q_MOC_OUTPUT_REVISION)
-#error "The header file 'Events.h' doesn't include <QObject>."
+#error "The header file 'customwidget.h' doesn't include <QObject>."
 #elif Q_MOC_OUTPUT_REVISION != 67
 #error "This file was generated using the moc from 5.15.11. It"
 #error "cannot be used with the include files from this version of Qt."
@@ -21,35 +21,36 @@
 QT_BEGIN_MOC_NAMESPACE
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
-struct qt_meta_stringdata_CustomListWidget_t {
-    QByteArrayData data[4];
-    char stringdata0[45];
+struct qt_meta_stringdata_CustomWidget_t {
+    QByteArrayData data[5];
+    char stringdata0[55];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-    qptrdiff(offsetof(qt_meta_stringdata_CustomListWidget_t, stringdata0) + ofs \
+    qptrdiff(offsetof(qt_meta_stringdata_CustomWidget_t, stringdata0) + ofs \
         - idx * sizeof(QByteArrayData)) \
     )
-static const qt_meta_stringdata_CustomListWidget_t qt_meta_stringdata_CustomListWidget = {
+static const qt_meta_stringdata_CustomWidget_t qt_meta_stringdata_CustomWidget = {
     {
-QT_MOC_LITERAL(0, 0, 16), // "CustomListWidget"
-QT_MOC_LITERAL(1, 17, 9), // "item_drop"
-QT_MOC_LITERAL(2, 27, 0), // ""
-QT_MOC_LITERAL(3, 28, 16) // "QListWidgetItem*"
+QT_MOC_LITERAL(0, 0, 12), // "CustomWidget"
+QT_MOC_LITERAL(1, 13, 14), // "sendRemoveItem"
+QT_MOC_LITERAL(2, 28, 0), // ""
+QT_MOC_LITERAL(3, 29, 4), // "text"
+QT_MOC_LITERAL(4, 34, 20) // "close_button_clicked"
 
     },
-    "CustomListWidget\0item_drop\0\0"
-    "QListWidgetItem*"
+    "CustomWidget\0sendRemoveItem\0\0text\0"
+    "close_button_clicked"
 };
 #undef QT_MOC_LITERAL
 
-static const uint qt_meta_data_CustomListWidget[] = {
+static const uint qt_meta_data_CustomWidget[] = {
 
  // content:
        8,       // revision
        0,       // classname
        0,    0, // classinfo
-       1,   14, // methods
+       2,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -57,28 +58,35 @@ static const uint qt_meta_data_CustomListWidget[] = {
        1,       // signalCount
 
  // signals: name, argc, parameters, tag, flags
-       1,    1,   19,    2, 0x06 /* Public */,
+       1,    1,   24,    2, 0x06 /* Public */,
+
+ // slots: name, argc, parameters, tag, flags
+       4,    0,   27,    2, 0x08 /* Private */,
 
  // signals: parameters
-    QMetaType::Void, 0x80000000 | 3,    2,
+    QMetaType::Void, QMetaType::QString,    3,
+
+ // slots: parameters
+    QMetaType::Void,
 
        0        // eod
 };
 
-void CustomListWidget::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
+void CustomWidget::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
     if (_c == QMetaObject::InvokeMetaMethod) {
-        auto *_t = static_cast<CustomListWidget *>(_o);
+        auto *_t = static_cast<CustomWidget *>(_o);
         (void)_t;
         switch (_id) {
-        case 0: _t->item_drop((*reinterpret_cast< QListWidgetItem*(*)>(_a[1]))); break;
+        case 0: _t->sendRemoveItem((*reinterpret_cast< const QString(*)>(_a[1]))); break;
+        case 1: _t->close_button_clicked(); break;
         default: ;
         }
     } else if (_c == QMetaObject::IndexOfMethod) {
         int *result = reinterpret_cast<int *>(_a[0]);
         {
-            using _t = void (CustomListWidget::*)(QListWidgetItem * );
-            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&CustomListWidget::item_drop)) {
+            using _t = void (CustomWidget::*)(const QString & );
+            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&CustomWidget::sendRemoveItem)) {
                 *result = 0;
                 return;
             }
@@ -86,48 +94,48 @@ void CustomListWidget::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int
     }
 }
 
-QT_INIT_METAOBJECT const QMetaObject CustomListWidget::staticMetaObject = { {
-    QMetaObject::SuperData::link<QListWidget::staticMetaObject>(),
-    qt_meta_stringdata_CustomListWidget.data,
-    qt_meta_data_CustomListWidget,
+QT_INIT_METAOBJECT const QMetaObject CustomWidget::staticMetaObject = { {
+    QMetaObject::SuperData::link<QWidget::staticMetaObject>(),
+    qt_meta_stringdata_CustomWidget.data,
+    qt_meta_data_CustomWidget,
     qt_static_metacall,
     nullptr,
     nullptr
 } };
 
 
-const QMetaObject *CustomListWidget::metaObject() const
+const QMetaObject *CustomWidget::metaObject() const
 {
     return QObject::d_ptr->metaObject ? QObject::d_ptr->dynamicMetaObject() : &staticMetaObject;
 }
 
-void *CustomListWidget::qt_metacast(const char *_clname)
+void *CustomWidget::qt_metacast(const char *_clname)
 {
     if (!_clname) return nullptr;
-    if (!strcmp(_clname, qt_meta_stringdata_CustomListWidget.stringdata0))
+    if (!strcmp(_clname, qt_meta_stringdata_CustomWidget.stringdata0))
         return static_cast<void*>(this);
-    return QListWidget::qt_metacast(_clname);
+    return QWidget::qt_metacast(_clname);
 }
 
-int CustomListWidget::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
+int CustomWidget::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 {
-    _id = QListWidget::qt_metacall(_c, _id, _a);
+    _id = QWidget::qt_metacall(_c, _id, _a);
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 1)
+        if (_id < 2)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 1;
+        _id -= 2;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 1)
+        if (_id < 2)
             *reinterpret_cast<int*>(_a[0]) = -1;
-        _id -= 1;
+        _id -= 2;
     }
     return _id;
 }
 
 // SIGNAL 0
-void CustomListWidget::item_drop(QListWidgetItem * _t1)
+void CustomWidget::sendRemoveItem(const QString & _t1)
 {
     void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t1))) };
     QMetaObject::activate(this, &staticMetaObject, 0, _a);
