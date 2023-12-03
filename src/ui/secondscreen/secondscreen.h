@@ -12,7 +12,6 @@
 #include <QFileDialog>
 #include <QDir>
 #include <QDebug>
-#include "LRUCache.h"
 #include <QListWidget>
 #include "Events.h"
 QT_BEGIN_NAMESPACE
@@ -31,19 +30,15 @@ public slots:
 private slots:
 
     void on_list_item_clicked(QListWidgetItem *item);
-    void handleItemDrop(QListWidgetItem *item);
     void on_pushButton_clicked();
     void on_pushButton_2_clicked();
-//    void on_pushButton_3_clicked();
 
 private:
     bool is_image(const QString &filePath);
-    void load_image(const QString &filePath);
+    void load_image(const QString &file_path);
     Ui::SecondScreen *ui;
-//    QGraphicsScene *scene;
-    LRUCache *lrucache;
+    QGraphicsScene *scene;
 
-//    CustomListWidget *customGraphicsView;
 };
 
 

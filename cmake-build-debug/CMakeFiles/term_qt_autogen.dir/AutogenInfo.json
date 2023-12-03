@@ -7,11 +7,11 @@
 	"CMAKE_LIST_FILES" : 
 	[
 		"/home/egerin/Projects/term_qt/CMakeLists.txt",
-		"/home/egerin/Projects/term_qt/cmake-build-debug/CMakeFiles/3.27.8/CMakeSystem.cmake",
+		"/home/egerin/Projects/term_qt/cmake-build-debug/CMakeFiles/3.27.9/CMakeSystem.cmake",
 		"/usr/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake",
 		"/usr/share/cmake/Modules/Platform/Linux-Initialize.cmake",
-		"/home/egerin/Projects/term_qt/cmake-build-debug/CMakeFiles/3.27.8/CMakeCCompiler.cmake",
-		"/home/egerin/Projects/term_qt/cmake-build-debug/CMakeFiles/3.27.8/CMakeCXXCompiler.cmake",
+		"/home/egerin/Projects/term_qt/cmake-build-debug/CMakeFiles/3.27.9/CMakeCCompiler.cmake",
+		"/home/egerin/Projects/term_qt/cmake-build-debug/CMakeFiles/3.27.9/CMakeCXXCompiler.cmake",
 		"/usr/share/cmake/Modules/CMakeSystemSpecificInformation.cmake",
 		"/usr/share/cmake/Modules/CMakeGenericSystem.cmake",
 		"/usr/share/cmake/Modules/CMakeInitializeConfigs.cmake",
@@ -106,12 +106,6 @@
 			"/home/egerin/Projects/term_qt/src/ui/secondscreen/Events.h",
 			"MU",
 			"B5DKXFG7MI/moc_Events.cpp",
-			null
-		],
-		[
-			"/home/egerin/Projects/term_qt/src/ui/secondscreen/LRUCache.h",
-			"MU",
-			"B5DKXFG7MI/moc_LRUCache.cpp",
 			null
 		],
 		[
@@ -226,11 +220,6 @@
 		],
 		[
 			"/home/egerin/Projects/term_qt/src/ui/secondscreen/Events.cpp",
-			"MU",
-			null
-		],
-		[
-			"/home/egerin/Projects/term_qt/src/ui/secondscreen/LRUCache.cpp",
 			"MU",
 			null
 		],

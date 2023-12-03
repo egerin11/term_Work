@@ -1,8 +1,8 @@
 term_qt_autogen/timestamp: \
   /home/egerin/Projects/term_qt/CMakeLists.txt \
-  CMakeFiles/3.27.8/CMakeCCompiler.cmake \
-  CMakeFiles/3.27.8/CMakeCXXCompiler.cmake \
-  CMakeFiles/3.27.8/CMakeSystem.cmake \
+  CMakeFiles/3.27.9/CMakeCCompiler.cmake \
+  CMakeFiles/3.27.9/CMakeCXXCompiler.cmake \
+  CMakeFiles/3.27.9/CMakeSystem.cmake \
   term_qt_autogen/moc_predefs.h \
   /home/egerin/Projects/term_qt/icon_app.qrc \
   /home/egerin/Projects/term_qt/src/main.cpp \
@@ -14,8 +14,6 @@ term_qt_autogen/timestamp: \
   /home/egerin/Projects/term_qt/src/ui/mainwindow/mainwindow.ui \
   /home/egerin/Projects/term_qt/src/ui/secondscreen/Events.cpp \
   /home/egerin/Projects/term_qt/src/ui/secondscreen/Events.h \
-  /home/egerin/Projects/term_qt/src/ui/secondscreen/LRUCache.cpp \
-  /home/egerin/Projects/term_qt/src/ui/secondscreen/LRUCache.h \
   /home/egerin/Projects/term_qt/src/ui/secondscreen/convert.cpp \
   /home/egerin/Projects/term_qt/src/ui/secondscreen/convert.h \
   /home/egerin/Projects/term_qt/src/ui/secondscreen/secondscreen.cpp \
@@ -268,8 +266,6 @@ term_qt_autogen/timestamp: \
   /usr/include/pthread.h \
   /usr/include/qt/QtCore/QDebug \
   /usr/include/qt/QtCore/QDir \
-  /usr/include/qt/QtCore/QMap \
-  /usr/include/qt/QtCore/QSet \
   /usr/include/qt/QtCore/qabstractitemmodel.h \
   /usr/include/qt/QtCore/qalgorithms.h \
   /usr/include/qt/QtCore/qarraydata.h \

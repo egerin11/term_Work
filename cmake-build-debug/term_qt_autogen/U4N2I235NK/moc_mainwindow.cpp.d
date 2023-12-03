@@ -1,7 +1,6 @@
 /home/egerin/Projects/term_qt/cmake-build-debug/term_qt_autogen/U4N2I235NK/moc_mainwindow.cpp: /home/egerin/Projects/term_qt/src/ui/mainwindow/mainwindow.h \
   /home/egerin/Projects/term_qt/cmake-build-debug/term_qt_autogen/moc_predefs.h \
   /home/egerin/Projects/term_qt/src/ui/secondscreen/Events.h \
-  /home/egerin/Projects/term_qt/src/ui/secondscreen/LRUCache.h \
   /home/egerin/Projects/term_qt/src/ui/secondscreen/secondscreen.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
@@ -239,8 +238,6 @@
   /usr/include/pthread.h \
   /usr/include/qt/QtCore/QDebug \
   /usr/include/qt/QtCore/QDir \
-  /usr/include/qt/QtCore/QMap \
-  /usr/include/qt/QtCore/QSet \
   /usr/include/qt/QtCore/qabstractitemmodel.h \
   /usr/include/qt/QtCore/qalgorithms.h \
   /usr/include/qt/QtCore/qarraydata.h \

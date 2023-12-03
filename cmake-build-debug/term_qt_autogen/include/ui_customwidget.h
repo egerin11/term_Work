@@ -13,6 +13,7 @@
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QHBoxLayout>
 #include <QtWidgets/QLabel>
+#include <QtWidgets/QSpacerItem>
 #include <QtWidgets/QToolButton>
 #include <QtWidgets/QWidget>
 
@@ -23,19 +24,24 @@ class Ui_CustomWidget
 public:
     QHBoxLayout *horizontalLayout;
     QLabel *label;
+    QSpacerItem *horizontalSpacer_2;
     QToolButton *closeButton;
 
     void setupUi(QWidget *CustomWidget)
     {
         if (CustomWidget->objectName().isEmpty())
             CustomWidget->setObjectName(QString::fromUtf8("CustomWidget"));
-        CustomWidget->resize(250, 60);
+        CustomWidget->resize(324, 98);
         horizontalLayout = new QHBoxLayout(CustomWidget);
         horizontalLayout->setObjectName(QString::fromUtf8("horizontalLayout"));
         label = new QLabel(CustomWidget);
         label->setObjectName(QString::fromUtf8("label"));
 
         horizontalLayout->addWidget(label);
+
+        horizontalSpacer_2 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        horizontalLayout->addItem(horizontalSpacer_2);
 
         closeButton = new QToolButton(CustomWidget);
         closeButton->setObjectName(QString::fromUtf8("closeButton"));

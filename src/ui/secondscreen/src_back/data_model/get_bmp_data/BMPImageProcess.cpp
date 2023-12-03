@@ -11,7 +11,7 @@ std::vector<std::vector<Pixel>> BMPImageProcess::read_data_of_pixels(std::ifstre
     std::vector<std::vector<Pixel>> image_pixels(m_bmpImageHeader.m_height,
                                                  std::vector<Pixel>(m_bmpImageHeader.m_width));
     auto *buffer = new unsigned char[bytesPP];
-    for (int i = 0; i < m_bmpImageHeader.m_height; i++) {
+    for (int i = m_bmpImageHeader.m_height - 1; i >= 0; i--) {
         for (int j = 0; j < m_bmpImageHeader.m_width; j++) {
             file.read(reinterpret_cast<char *>(buffer), bytesPP);
             image_pixels[i][j].m_blue = buffer[0];

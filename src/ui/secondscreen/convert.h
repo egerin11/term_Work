@@ -24,9 +24,6 @@ public:
 private:
     static float map(float value, float start1, float stop1, float start2, float stop2);
 
-    static Pixel
-    bilinear_interpolation(const Pixel &q11, const Pixel &q12, const Pixel &q21, const Pixel &q22, double x, double y);
-
 };
 
 #endif //TERM_WORK_CONVERT_H

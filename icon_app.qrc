@@ -3,5 +3,11 @@
         <file>image/images.png</file>
         <file>image/icon2.png</file>
         <file>image/button_icon.png</file>
+        <file>image/close_icon.png</file>
+        <file>image/close_icon_2.png</file>
+        <file>image/close_icon_3.png</file>
+        <file>image/close_icon_4.png</file>
+
+
     </qresource>
 </RCC>

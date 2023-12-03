@@ -22,13 +22,10 @@ public:
 
     int get_height() const;
 
-//    void save(const std::string &file_name);
 
-//    void resize(int new_width, int new_height);
 
     void grayscale();
-//    Pixel bilinear_interpolation(float x, float y);
-//    Pixel bicubicInterpolation(double x, double y);
+
 
 private:
     std::vector<std::vector<Pixel>> read_data_of_pixels(std::ifstream &file) const;

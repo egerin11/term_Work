@@ -7,20 +7,7 @@
 #include <fstream>
 #include <cmath>
 
-//void Convert::ascii(const Image *image, Ui::SecondScreen *ui) {
-//    const std::string ASCII_LIST = "$@B%8&WM#*oahkbdpqwmZO0QLCJUYXzcvunxrjft/|()1{}[]?-_+~<>i!lI;:,\"^`'. ";
-//    std::vector<std::vector<Pixel>> pixels = image->get_pixels();
-//    QString asciiArt;
-//    for (int y = 0; y < image->get_height(); y++) {
-//           for (int x = 0; x < image->get_width(); x++) {
-//            int ascii_index = (int) map((float) pixels[y][x].m_red, 0, 255, 0, (float) ASCII_LIST.length() - 1);
-//            char ascii_char = ASCII_LIST[ascii_index];
-//            asciiArt.append(ascii_char);
-//        }
-//        asciiArt.append('\n');
-//    }
-//    ui->textBrowser->setText(asciiArt);
-//}
+
 
 void Convert::ascii(const Image *image,const std::string& outputFilePath) {
     const std::string ASCII_LIST = "$@B%8&WM#*oahkbdpqwmZO0QLCJUYXzcvunxrjft/|()1{}[]?-_+~<>i!lI;:,\"^`'. ";
@@ -44,10 +31,10 @@ void Convert::ascii(const Image *image,const std::string& outputFilePath) {
         std::cerr << "Unable to open the output file." << std::endl;
     }
 }
-float Convert::map(float value, float start1, float stop1, float start2, float stop2) {
-    return ((value - start1) / (stop1 - start1)) * (stop2 - start2) + start2;
+    float Convert::map(float value, float start1, float stop1, float start2, float stop2) {
+        return ((value - start1) / (stop1 - start1)) * (stop2 - start2) + start2;
 
-}
+    }
 
 void Convert::grayscale(Image *image) {
     std::vector<std::vector<Pixel>> pixels = image->get_pixels();
@@ -67,12 +54,7 @@ void Convert::grayscale(Image *image) {
 }
 
 
-Pixel Convert::bilinear_interpolation(const Pixel &q11, const Pixel &q12, const Pixel &q21, const Pixel &q22, double x,
-                                      double y) {
-    Pixel r1 = q11 * (1 - x) + q12 * x;
-    Pixel r2 = q21 * (1 - x) + q22 * x;
-    return r1 * (1 - y) + r2 * y;
-}
+
 
 std::vector<std::vector<Pixel>> Convert::resized_image(Image *image, int new_height, int new_width) {
     std::vector<std::vector<Pixel>> resized_image(new_height, std::vector<Pixel>(new_width));
