@@ -23,7 +23,7 @@ public:
     QString get_text();
 
 signals:
-    void sendRemoveItem(const QString& text);
+    void send_remove_item(const QString& text);
 
 private slots:
     void close_button_clicked();

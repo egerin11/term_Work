@@ -13,7 +13,7 @@ class Pixel;
 
 class Convert {
 public:
-    static void ascii(const Image *image,const std::string& outputFilePath);
+    static void ascii(const Image *image,const std::string& file_path);
 
     static void grayscale(Image *image);
 

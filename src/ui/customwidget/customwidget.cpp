@@ -14,7 +14,7 @@ CustomWidget::CustomWidget(QWidget* parent)
 //    ui->closeButton->setStyleSheet("QToolButton {  border: none;  }");
     ui->closeButton->setWindowIcon(QIcon(":icon_app/image/close_icon_4.png"));
 
-    connect(this, &CustomWidget::sendRemoveItem, qobject_cast<SecondScreen*>(parent), &SecondScreen::remove_item);
+    connect(this, &CustomWidget::send_remove_item, qobject_cast<SecondScreen*>(parent), &SecondScreen::remove_item);
 
     connect(ui->closeButton, &QPushButton::clicked, this, &CustomWidget::close_button_clicked);
 }
@@ -33,5 +33,5 @@ QString CustomWidget::get_text()
 
 void CustomWidget::close_button_clicked()
 {   qDebug()<<"click"<<ui->label->text();
-    emit sendRemoveItem(ui->label->text());
+    emit send_remove_item(ui->label->text());
 }

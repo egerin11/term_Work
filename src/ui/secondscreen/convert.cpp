@@ -9,24 +9,24 @@
 
 
 
-void Convert::ascii(const Image *image,const std::string& outputFilePath) {
+void Convert::ascii(const Image *image,const std::string& file_path) {
     const std::string ASCII_LIST = "$@B%8&WM#*oahkbdpqwmZO0QLCJUYXzcvunxrjft/|()1{}[]?-_+~<>i!lI;:,\"^`'. ";
     std::vector<std::vector<Pixel>> pixels = image->get_pixels();
 
-    std::ofstream outputFile(outputFilePath);
+    std::ofstream output_file(file_path);
 
-    if (outputFile.is_open()) {
+    if (output_file.is_open()) {
         for (int y = 0; y < image->get_height(); y++) {
             for (int x = 0; x < image->get_width(); x++) {
                 int ascii_index = static_cast<int>(map(static_cast<float>(pixels[y][x].m_red), 0, 255, 0, static_cast<float>(ASCII_LIST.length()) - 1));
                 char ascii_char = ASCII_LIST[ascii_index];
 
-                outputFile << ascii_char;
+                output_file << ascii_char;
             }
-            outputFile << std::endl;
+            output_file << std::endl;
         }
 
-        outputFile.close();
+        output_file.close();
     } else {
         std::cerr << "Unable to open the output file." << std::endl;
     }

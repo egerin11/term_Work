@@ -139,6 +139,12 @@
 			null
 		],
 		[
+			"/home/egerin/Projects/term_qt/src/ui/secondscreen/src_back/data/header/other_image.h",
+			"MU",
+			"ZP7ZLJYYBH/moc_other_image.cpp",
+			null
+		],
+		[
 			"/home/egerin/Projects/term_qt/src/ui/secondscreen/src_back/data/header/pixel.h",
 			"MU",
 			"ZP7ZLJYYBH/moc_pixel.cpp",
@@ -240,6 +246,11 @@
 		],
 		[
 			"/home/egerin/Projects/term_qt/src/ui/secondscreen/src_back/data/image.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/egerin/Projects/term_qt/src/ui/secondscreen/src_back/data/other_image.cpp",
 			"MU",
 			null
 		],

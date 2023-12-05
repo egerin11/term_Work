@@ -23,7 +23,7 @@ QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_CustomWidget_t {
     QByteArrayData data[5];
-    char stringdata0[55];
+    char stringdata0[57];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -33,13 +33,13 @@ struct qt_meta_stringdata_CustomWidget_t {
 static const qt_meta_stringdata_CustomWidget_t qt_meta_stringdata_CustomWidget = {
     {
 QT_MOC_LITERAL(0, 0, 12), // "CustomWidget"
-QT_MOC_LITERAL(1, 13, 14), // "sendRemoveItem"
-QT_MOC_LITERAL(2, 28, 0), // ""
-QT_MOC_LITERAL(3, 29, 4), // "text"
-QT_MOC_LITERAL(4, 34, 20) // "close_button_clicked"
+QT_MOC_LITERAL(1, 13, 16), // "send_remove_item"
+QT_MOC_LITERAL(2, 30, 0), // ""
+QT_MOC_LITERAL(3, 31, 4), // "text"
+QT_MOC_LITERAL(4, 36, 20) // "close_button_clicked"
 
     },
-    "CustomWidget\0sendRemoveItem\0\0text\0"
+    "CustomWidget\0send_remove_item\0\0text\0"
     "close_button_clicked"
 };
 #undef QT_MOC_LITERAL
@@ -78,7 +78,7 @@ void CustomWidget::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id
         auto *_t = static_cast<CustomWidget *>(_o);
         (void)_t;
         switch (_id) {
-        case 0: _t->sendRemoveItem((*reinterpret_cast< const QString(*)>(_a[1]))); break;
+        case 0: _t->send_remove_item((*reinterpret_cast< const QString(*)>(_a[1]))); break;
         case 1: _t->close_button_clicked(); break;
         default: ;
         }
@@ -86,7 +86,7 @@ void CustomWidget::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id
         int *result = reinterpret_cast<int *>(_a[0]);
         {
             using _t = void (CustomWidget::*)(const QString & );
-            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&CustomWidget::sendRemoveItem)) {
+            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&CustomWidget::send_remove_item)) {
                 *result = 0;
                 return;
             }
@@ -135,7 +135,7 @@ int CustomWidget::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 }
 
 // SIGNAL 0
-void CustomWidget::sendRemoveItem(const QString & _t1)
+void CustomWidget::send_remove_item(const QString & _t1)
 {
     void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t1))) };
     QMetaObject::activate(this, &staticMetaObject, 0, _a);

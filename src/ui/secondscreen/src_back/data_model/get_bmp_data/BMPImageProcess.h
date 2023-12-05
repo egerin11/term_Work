@@ -24,9 +24,6 @@ public:
 
 
 
-    void grayscale();
-
-
 private:
     std::vector<std::vector<Pixel>> read_data_of_pixels(std::ifstream &file) const;
 

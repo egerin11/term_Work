@@ -13,7 +13,6 @@ typedef struct  {
 }BMPFileHeader;
 
 typedef struct  {
-
     unsigned int m_header_size;
     int m_width;
     int m_height;

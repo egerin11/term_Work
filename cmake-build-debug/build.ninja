@@ -137,6 +137,14 @@ build CMakeFiles/term_qt.dir/src/ui/customwidget/customwidget.cpp.o: CXX_COMPILE
   OBJECT_DIR = CMakeFiles/term_qt.dir
   OBJECT_FILE_DIR = CMakeFiles/term_qt.dir/src/ui/customwidget
 
+build CMakeFiles/term_qt.dir/src/ui/secondscreen/src_back/data/other_image.cpp.o: CXX_COMPILER__term_qt_unscanned_Debug /home/egerin/Projects/term_qt/src/ui/secondscreen/src_back/data/other_image.cpp || cmake_object_order_depends_target_term_qt
+  DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = CMakeFiles/term_qt.dir/src/ui/secondscreen/src_back/data/other_image.cpp.o.d
+  FLAGS = -g -fdiagnostics-color=always -fPIC
+  INCLUDES = -isystem /home/egerin/Projects/term_qt/cmake-build-debug/term_qt_autogen/include -isystem /usr/include/qt -isystem /usr/include/qt/QtCore -isystem /usr/lib/qt/mkspecs/linux-g++ -isystem /usr/include/qt/QtGui -isystem /usr/include/qt/QtWidgets
+  OBJECT_DIR = CMakeFiles/term_qt.dir
+  OBJECT_FILE_DIR = CMakeFiles/term_qt.dir/src/ui/secondscreen/src_back/data
+
 build CMakeFiles/term_qt.dir/term_qt_autogen/EWIEGA46WW/qrc_icon_app.cpp.o: CXX_COMPILER__term_qt_unscanned_Debug /home/egerin/Projects/term_qt/cmake-build-debug/term_qt_autogen/EWIEGA46WW/qrc_icon_app.cpp || cmake_object_order_depends_target_term_qt
   DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
   DEP_FILE = CMakeFiles/term_qt.dir/term_qt_autogen/EWIEGA46WW/qrc_icon_app.cpp.o.d
@@ -153,7 +161,7 @@ build CMakeFiles/term_qt.dir/term_qt_autogen/EWIEGA46WW/qrc_icon_app.cpp.o: CXX_
 #############################################
 # Link the executable term_qt
 
-build term_qt: CXX_EXECUTABLE_LINKER__term_qt_Debug CMakeFiles/term_qt.dir/term_qt_autogen/mocs_compilation.cpp.o CMakeFiles/term_qt.dir/src/main.cpp.o CMakeFiles/term_qt.dir/src/ui/mainwindow/mainwindow.cpp.o CMakeFiles/term_qt.dir/src/ui/secondscreen/secondscreen.cpp.o CMakeFiles/term_qt.dir/src/ui/secondscreen/Events.cpp.o CMakeFiles/term_qt.dir/src/ui/secondscreen/convert.cpp.o CMakeFiles/term_qt.dir/src/ui/secondscreen/src_back/data_model/get_bmp_data/BMPImageProcess.cpp.o CMakeFiles/term_qt.dir/src/ui/secondscreen/src_back/data/bmp_image.cpp.o CMakeFiles/term_qt.dir/src/ui/secondscreen/src_back/data/image.cpp.o CMakeFiles/term_qt.dir/src/ui/secondscreen/src_back/data/ppm_image.cpp.o CMakeFiles/term_qt.dir/src/ui/customwidget/customwidget.cpp.o CMakeFiles/term_qt.dir/term_qt_autogen/EWIEGA46WW/qrc_icon_app.cpp.o | /usr/lib/libQt5Widgets.so.5.15.11 /usr/lib/libQt5Gui.so.5.15.11 /usr/lib/libQt5Core.so.5.15.11 || term_qt_autogen term_qt_autogen_timestamp_deps
+build term_qt: CXX_EXECUTABLE_LINKER__term_qt_Debug CMakeFiles/term_qt.dir/term_qt_autogen/mocs_compilation.cpp.o CMakeFiles/term_qt.dir/src/main.cpp.o CMakeFiles/term_qt.dir/src/ui/mainwindow/mainwindow.cpp.o CMakeFiles/term_qt.dir/src/ui/secondscreen/secondscreen.cpp.o CMakeFiles/term_qt.dir/src/ui/secondscreen/Events.cpp.o CMakeFiles/term_qt.dir/src/ui/secondscreen/convert.cpp.o CMakeFiles/term_qt.dir/src/ui/secondscreen/src_back/data_model/get_bmp_data/BMPImageProcess.cpp.o CMakeFiles/term_qt.dir/src/ui/secondscreen/src_back/data/bmp_image.cpp.o CMakeFiles/term_qt.dir/src/ui/secondscreen/src_back/data/image.cpp.o CMakeFiles/term_qt.dir/src/ui/secondscreen/src_back/data/ppm_image.cpp.o CMakeFiles/term_qt.dir/src/ui/customwidget/customwidget.cpp.o CMakeFiles/term_qt.dir/src/ui/secondscreen/src_back/data/other_image.cpp.o CMakeFiles/term_qt.dir/term_qt_autogen/EWIEGA46WW/qrc_icon_app.cpp.o | /usr/lib/libQt5Widgets.so.5.15.11 /usr/lib/libQt5Gui.so.5.15.11 /usr/lib/libQt5Core.so.5.15.11 || term_qt_autogen term_qt_autogen_timestamp_deps
   FLAGS = -g
   LINK_LIBRARIES = /usr/lib/libQt5Widgets.so.5.15.11  /usr/lib/libQt5Gui.so.5.15.11  /usr/lib/libQt5Core.so.5.15.11
   OBJECT_DIR = CMakeFiles/term_qt.dir

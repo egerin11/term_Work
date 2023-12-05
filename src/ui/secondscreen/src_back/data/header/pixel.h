@@ -6,23 +6,11 @@
 
 #pragma pack(push, 1)
 
-class Pixel {
-    friend class BMPImageProcess;
+struct Pixel {
 
-    friend class PPMImage;
-
-    friend class Convert;
-
-    friend class SecondScreen;
-
-    friend class Image;
-
-
-private:
     unsigned char m_blue;
     unsigned char m_green;
     unsigned char m_red;
-public:
     Pixel operator+(const Pixel& other) const {
         Pixel result;
         result.m_red = static_cast<unsigned char>( static_cast<int>(m_red) + static_cast<int>(other.m_red));

@@ -24,7 +24,7 @@ private slots:
 private:
     Ui::MainWindow *ui;
     SecondScreen *secondScreen;
-    QWidget *mainScreen;
+//    QWidget *mainScreen;
     QStackedWidget *stackedWidget;
 };
 

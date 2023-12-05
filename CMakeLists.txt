@@ -38,6 +38,8 @@ add_executable(term_qt icon_app.qrc
         src/ui/customwidget/customwidget.cpp
         src/ui/customwidget/customwidget.h
         src/ui/customwidget/customwidget.ui
+        src/ui/secondscreen/src_back/data/other_image.cpp
+        src/ui/secondscreen/src_back/data/header/other_image.h
 
 )
 target_link_libraries(term_qt

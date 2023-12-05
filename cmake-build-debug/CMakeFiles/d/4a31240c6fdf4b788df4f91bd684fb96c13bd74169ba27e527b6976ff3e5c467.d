@@ -23,9 +23,11 @@ term_qt_autogen/timestamp: \
   /home/egerin/Projects/term_qt/src/ui/secondscreen/src_back/data/header/bmp_header.h \
   /home/egerin/Projects/term_qt/src/ui/secondscreen/src_back/data/header/bmp_image.h \
   /home/egerin/Projects/term_qt/src/ui/secondscreen/src_back/data/header/image.h \
+  /home/egerin/Projects/term_qt/src/ui/secondscreen/src_back/data/header/other_image.h \
   /home/egerin/Projects/term_qt/src/ui/secondscreen/src_back/data/header/pixel.h \
   /home/egerin/Projects/term_qt/src/ui/secondscreen/src_back/data/header/ppm_image.h \
   /home/egerin/Projects/term_qt/src/ui/secondscreen/src_back/data/image.cpp \
+  /home/egerin/Projects/term_qt/src/ui/secondscreen/src_back/data/other_image.cpp \
   /home/egerin/Projects/term_qt/src/ui/secondscreen/src_back/data/ppm_image.cpp \
   /home/egerin/Projects/term_qt/src/ui/secondscreen/src_back/data_model/get_bmp_data/BMPImageProcess.cpp \
   /home/egerin/Projects/term_qt/src/ui/secondscreen/src_back/data_model/get_bmp_data/BMPImageProcess.h \
