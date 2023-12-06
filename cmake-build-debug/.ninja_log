@@ -38,3 +38,16 @@
 28	1391	1701806336036041955	CMakeFiles/term_qt.dir/src/ui/secondscreen/src_back/data/other_image.cpp.o	47e738c4c4ddf729
 27	1740	1701806336386040369	CMakeFiles/term_qt.dir/src/ui/secondscreen/secondscreen.cpp.o	73a8368bcd3284fe
 1740	2009	1701806336652705828	term_qt	e773abbc522cdb7b
+2	32	1701857005197967937	term_qt_autogen/timestamp	fc24d77a146e8564
+2	32	1701857005197967937	term_qt_autogen/mocs_compilation.cpp	fc24d77a146e8564
+2	32	1701857005197967937	/home/egerin/Projects/term_qt/cmake-build-debug/term_qt_autogen/timestamp	fc24d77a146e8564
+2	32	1701857005197967937	/home/egerin/Projects/term_qt/cmake-build-debug/term_qt_autogen/mocs_compilation.cpp	fc24d77a146e8564
+34	1839	1701857007001287754	CMakeFiles/term_qt.dir/src/ui/secondscreen/convert.cpp.o	aa9c8adc8e7b7d71
+34	2075	1701857007237952651	CMakeFiles/term_qt.dir/src/ui/secondscreen/secondscreen.cpp.o	73a8368bcd3284fe
+2076	2450	1701857007607949884	term_qt	e773abbc522cdb7b
+2	29	1701857103220609317	term_qt_autogen/timestamp	fc24d77a146e8564
+2	29	1701857103220609317	term_qt_autogen/mocs_compilation.cpp	fc24d77a146e8564
+2	29	1701857103220609317	/home/egerin/Projects/term_qt/cmake-build-debug/term_qt_autogen/timestamp	fc24d77a146e8564
+2	29	1701857103220609317	/home/egerin/Projects/term_qt/cmake-build-debug/term_qt_autogen/mocs_compilation.cpp	fc24d77a146e8564
+30	1725	1701857104917264600	CMakeFiles/term_qt.dir/src/ui/secondscreen/convert.cpp.o	aa9c8adc8e7b7d71
+1725	2045	1701857105233929145	term_qt	e773abbc522cdb7b

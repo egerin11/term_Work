@@ -26,10 +26,11 @@ void Convert::ascii(const Image *image, const std::string &file_path) {
             output_file << std::endl;
         }
 
-        output_file.close();
     } else {
         std::cerr << "Unable to open the output file." << std::endl;
     }
+    output_file.close();
+
 }
 
 float Convert::map(float value, float start1, float stop1, float start2, float stop2) {
