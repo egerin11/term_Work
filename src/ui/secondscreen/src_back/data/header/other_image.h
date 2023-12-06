@@ -1,6 +1,4 @@
-//
-// Created by egerin on 12/5/23.
-//
+
 
 #ifndef TERM_QT_OTHER_IMAGE_H
 #define TERM_QT_OTHER_IMAGE_H
@@ -20,6 +18,7 @@ public:
     void set_width(const int &new_width) override;
 
     void set_height(const int &new_height) override;
+    std::vector<std::vector<Pixel>> read(const QString &filePath);
 };
 
 

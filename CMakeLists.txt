@@ -21,8 +21,6 @@ add_executable(term_qt icon_app.qrc
         src/ui/secondscreen/secondscreen.cpp
         src/ui/secondscreen/secondscreen.h
         src/ui/secondscreen/secondscreen.ui
-        src/ui/secondscreen/Events.cpp
-        src/ui/secondscreen/Events.h
         src/ui/secondscreen/convert.cpp
         src/ui/secondscreen/convert.h
         src/ui/secondscreen/src_back/data_model/get_bmp_data/BMPImageProcess.cpp

@@ -103,12 +103,6 @@
 			null
 		],
 		[
-			"/home/egerin/Projects/term_qt/src/ui/secondscreen/Events.h",
-			"MU",
-			"B5DKXFG7MI/moc_Events.cpp",
-			null
-		],
-		[
 			"/home/egerin/Projects/term_qt/src/ui/secondscreen/convert.h",
 			"MU",
 			"B5DKXFG7MI/moc_convert.cpp",
@@ -221,11 +215,6 @@
 		],
 		[
 			"/home/egerin/Projects/term_qt/src/ui/mainwindow/mainwindow.cpp",
-			"MU",
-			null
-		],
-		[
-			"/home/egerin/Projects/term_qt/src/ui/secondscreen/Events.cpp",
 			"MU",
 			null
 		],

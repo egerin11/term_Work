@@ -13,7 +13,6 @@
 #include <QDir>
 #include <QDebug>
 #include <QListWidget>
-#include "Events.h"
 QT_BEGIN_NAMESPACE
 namespace Ui { class SecondScreen; }
 QT_END_NAMESPACE

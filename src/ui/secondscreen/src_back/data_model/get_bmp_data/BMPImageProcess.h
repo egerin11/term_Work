@@ -26,7 +26,6 @@ public:
 
 private:
     std::vector<std::vector<Pixel>> read_data_of_pixels(std::ifstream &file) const;
-
     BMPFileHeader m_bmpFileHeader;
     BMPImageHeader m_bmpImageHeader;
     std::vector<std::vector<Pixel>> m_pixels;

@@ -13,7 +13,6 @@ term_qt_autogen/timestamp: \
   /home/egerin/Projects/term_qt/src/ui/mainwindow/mainwindow.h \
   /home/egerin/Projects/term_qt/src/ui/mainwindow/mainwindow.ui \
   /home/egerin/Projects/term_qt/src/ui/secondscreen/Events.cpp \
-  /home/egerin/Projects/term_qt/src/ui/secondscreen/Events.h \
   /home/egerin/Projects/term_qt/src/ui/secondscreen/convert.cpp \
   /home/egerin/Projects/term_qt/src/ui/secondscreen/convert.h \
   /home/egerin/Projects/term_qt/src/ui/secondscreen/secondscreen.cpp \

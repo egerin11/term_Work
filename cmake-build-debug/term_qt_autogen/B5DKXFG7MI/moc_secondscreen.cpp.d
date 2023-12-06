@@ -1,6 +1,5 @@
 /home/egerin/Projects/term_qt/cmake-build-debug/term_qt_autogen/B5DKXFG7MI/moc_secondscreen.cpp: /home/egerin/Projects/term_qt/src/ui/secondscreen/secondscreen.h \
   /home/egerin/Projects/term_qt/cmake-build-debug/term_qt_autogen/moc_predefs.h \
-  /home/egerin/Projects/term_qt/src/ui/secondscreen/Events.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
   /usr/include/asm/errno.h \

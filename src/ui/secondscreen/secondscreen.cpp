@@ -53,10 +53,12 @@ void SecondScreen::load_image(const QString &file_path) {
 
 void SecondScreen::on_pushButton_clicked() {
     QString file_path = QFileDialog::getOpenFileName(this, "Выберите файл", QDir::homePath(),
-                                                     "Изображения (*.png *.jpg *.jpeg *.bmp *.gif);;Все файлы (*.*)");
+                                                     "Изображения(*.png *.jpg *.jpeg *.bmp *.gif *.ppm)");
     if (!file_path.isEmpty()) {
         QImageReader imageReader(file_path);
-        if (!imageReader.format().isEmpty()) {
+        imageReader.setFormat("PPM");
+        QImage qImage=imageReader.read();
+        if (!qImage.isNull()) {
             for (int i = 0; i < ui->listWidget->count(); ++i) {
                 QListWidgetItem *existingItem = ui->listWidget->item(i);
                 QString existingFilePath = existingItem->data(Qt::UserRole).toString();
@@ -65,7 +67,6 @@ void SecondScreen::on_pushButton_clicked() {
                     return;
                 }
             }
-
             CustomWidget *customWidget = new CustomWidget(this);
             customWidget->set_text(QFileInfo(file_path).fileName());
 
@@ -97,34 +98,19 @@ void SecondScreen::on_pushButton_2_clicked() {
         int view_width = 100;
         int view_height = 100;
         Image *image;
-        QString filePath = selected_item->data(Qt::UserRole).toString();
+        QString file_path = selected_item->data(Qt::UserRole).toString();
 
         std::vector<std::vector<Pixel>> pixels;
 
-        if (!is_image(filePath)) {
-            QImageReader image_reader(filePath);
-            QImage q_image = image_reader.read();
-            pixels.resize(q_image.height(), std::vector<Pixel>(q_image.width()));
-            for (int y = 0; y < q_image.height(); ++y) {
-                for (int x = 0; x < q_image.width(); ++x) {
-                    QRgb pixel_color = q_image.pixel(x, y);
-
-                    Pixel pixel;
-                    pixel.m_red = qRed(pixel_color);
-                    pixel.m_green = qGreen(pixel_color);
-                    pixel.m_blue = qBlue(pixel_color);
-                    pixels[y][x] = pixel;
-                }
-            }
+        if (!is_image(file_path)) {
             OtherImage otherImage;
+            pixels=otherImage.read(file_path);
             otherImage.set_pixels(pixels);
-            otherImage.set_height(q_image.height());
-            otherImage.set_width(q_image.width());
             image = dynamic_cast<Image *>(new OtherImage(otherImage));
 
-        } else if (filePath.toLower().endsWith(".bmp")) {
+        } else if (file_path.toLower().endsWith(".bmp")) {
             BMPImageProcess bmpImageProcess;
-            bmpImageProcess.read_image(filePath.toStdString());
+            bmpImageProcess.read_image(file_path.toStdString());
             pixels = bmpImageProcess.get_pixels();
             BMPImage bmpImage;
             bmpImage.set_width(bmpImageProcess.get_width());
@@ -134,15 +120,15 @@ void SecondScreen::on_pushButton_2_clicked() {
 
         } else {
             PPMImage ppmImage;
-            ppmImage.read_image(filePath.toStdString());
+            ppmImage.read_image(file_path.toStdString());
             image = dynamic_cast<Image *>(new PPMImage(ppmImage));
         }
         pixels = Convert::resized_image(image, view_height, view_width);
         image->set_pixels(pixels);
         Convert::grayscale(image);
         Convert::ascii(image, "test.txt");
-        QString file_path = "/home/egerin/Projects/term_qt/cmake-build-debug/";
-        QUrl fileUrl = QUrl::fromLocalFile(file_path + "test.txt");
+        QString txt_file_path = "/home/egerin/Projects/term_qt/cmake-build-debug/";
+        QUrl fileUrl = QUrl::fromLocalFile(txt_file_path + "test.txt");
 
         QDesktopServices::openUrl(fileUrl);
         delete image;
@@ -170,9 +156,9 @@ void SecondScreen::remove_item(const QString &text) {
 }
 
 
-bool SecondScreen::is_image(const QString &filePath) {
-    return filePath.toLower().endsWith(".bmp") ||
-           filePath.toLower().endsWith(".ppm");
+bool SecondScreen::is_image(const QString &file_path) {
+    return file_path.toLower().endsWith(".bmp") ||
+           file_path.toLower().endsWith(".ppm");
 
 }
 
