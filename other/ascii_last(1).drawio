@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-12-07T20:49:32.730Z" agent="Mozilla/5.0 (X11; Linux x86_64; rv:120.0) Gecko/20100101 Firefox/120.0" etag="ZWX0vp9MBSkzVkZAq9YS" version="22.1.7" type="device">
+<mxfile host="app.diagrams.net" modified="2023-12-07T23:57:11.867Z" agent="Mozilla/5.0 (X11; Linux x86_64; rv:120.0) Gecko/20100101 Firefox/120.0" etag="UiWUCZ_BdReswOQ76h3G" version="22.1.7" type="device">
   <diagram name="Page-1" id="Page-1">
-    <mxGraphModel dx="-272" dy="723" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="-1185" dy="694" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -468,11 +468,10 @@
             <mxGeometry x="3630" y="1010" as="geometry" />
           </mxCell>
         </UserObject>
-        <mxCell id="3eGt7si79daoKyPCbFKP-331" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="3eGt7si79daoKyPCbFKP-332" target="3eGt7si79daoKyPCbFKP-334" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="3eGt7si79daoKyPCbFKP-332" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;начало&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" parent="1" vertex="1">
-          <mxGeometry x="2142.5" y="1060" width="120" height="80" as="geometry" />
+        <mxCell id="3eGt7si79daoKyPCbFKP-331" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" target="3eGt7si79daoKyPCbFKP-334" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2202.5" y="1110" as="sourcePoint" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="3eGt7si79daoKyPCbFKP-334" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;инициализируем массив символов&lt;br&gt;и получаем массив пикселей&lt;/font&gt;" style="whiteSpace=wrap;html=1;strokeWidth=2;" parent="1" vertex="1">
           <mxGeometry x="2142.5" y="1169" width="120" height="80" as="geometry" />
@@ -555,6 +554,17 @@
         </mxCell>
         <mxCell id="3eGt7si79daoKyPCbFKP-359" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;закрытие файла&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="2450.75" y="1310" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="y3boa7VS3bqcjVX21_CH-276" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="3eGt7si79daoKyPCbFKP-359">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2510.75" y="1430" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="y3boa7VS3bqcjVX21_CH-278" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;Начало&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;arcSize=50;align=center;verticalAlign=middle;strokeWidth=1;autosize=1;spacing=4;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;entityRelationEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;,&quot;segment&quot;:10,&quot;curved&quot;:1,&quot;sourcePerimeterSpacing&quot;:0,&quot;targetPerimeterSpacing&quot;:0};" vertex="1" parent="1">
+          <mxGeometry x="2142.5" y="1070" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="y3boa7VS3bqcjVX21_CH-281" value="конец" style="whiteSpace=wrap;html=1;rounded=1;arcSize=50;align=center;verticalAlign=middle;strokeWidth=1;autosize=1;spacing=4;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;entityRelationEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;,&quot;segment&quot;:10,&quot;curved&quot;:1,&quot;sourcePerimeterSpacing&quot;:0,&quot;targetPerimeterSpacing&quot;:0};" vertex="1" parent="1">
+          <mxGeometry x="2450.75" y="1430" width="120" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
